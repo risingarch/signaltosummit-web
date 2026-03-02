@@ -1,0 +1,71 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Section from '../components/Section.astro';
+import BottomCTA from '../components/BottomCTA.astro';
+---
+
+<PageLayout
+  title="About"
+  description="Jaiah Kamara spent 15+ years in retail media, including 7 years building measurement infrastructure at Best Buy Ads. Signal to Summit brings operator-level insight to platform providers."
+>
+  {/* ── Section 2.1: OPENING FRAME ── */}
+  <section class="py-20 md:py-28">
+    <div class="mx-auto w-full max-w-[45rem] px-6">
+      <div class="md:flex md:items-start md:gap-12">
+        <div class="md:flex-1">
+          <h1 class="text-summit-navy mb-4">
+            I spent seven years watching platform providers lose deals they should have won.
+          </h1>
+          <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed">
+            Not because their products failed — but because nobody diagnosed what was happening inside the retailer.
+          </p>
+        </div>
+        <div class="mt-8 md:mt-0 md:flex-shrink-0">
+          <img
+            src="/images/jaiah-kamara-headshot.jpeg"
+            alt="Jaiah Kamara, Founder of Signal to Summit"
+            class="w-48 h-48 md:w-56 md:h-56 rounded-lg object-cover"
+            width="224"
+            height="224"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* ── Section 2.2: THE CREDIBILITY STACK ── */}
+  <Section background="soft-gray">
+    {/* Paragraph 1 — The Operator Story */}
+    <p class="text-summit-navy/90 leading-relaxed mb-6">
+      I spent more than 15 years inside retail media — building reporting teams, partnering with advertisers, and aligning product, analytics, engineering, and go-to-market functions across complex organizations. Most of that time was at Best Buy Ads, where I helped build the measurement infrastructure for one of the earliest retail media networks in the country.
+    </p>
+
+    {/* Paragraph 2 — The Diagnostic Lens */}
+    <p class="text-summit-navy/90 leading-relaxed mb-6">
+      What I saw, repeatedly, was the same pattern: platform providers with strong technology losing deals because they misread what was actually happening inside the retailer. Coalition dynamics that kill adoption before it starts. Delivery models that quietly become manual service businesses. Adoption timelines that stall — not because the retailer lacks interest, but because the platform never accounted for what implementation actually requires inside a complex organization.
+    </p>
+
+    {/* Paragraph 3 — The Advisory Stance */}
+    <p class="text-summit-navy/90 leading-relaxed">
+      Today I work with senior leaders at retail media enablement companies navigating these exact challenges. I don't nod along. I diagnose what's actually happening in the room you're trying to sell into — and I help you build a strategy that accounts for the operating reality your customers live with, not the one your roadmap assumes.
+    </p>
+  </Section>
+
+  {/* ── Section 2.3: CREDENTIALS ── */}
+  <Section>
+    <p class="text-summit-navy/70 text-sm md:text-[0.9375rem] leading-relaxed">
+      Currently completing the MIT xPRO AI Leadership Program. Creator of Summit Signals — ongoing analysis of why retail media partnerships fail and how platform leaders can read the signals before deals stall.
+    </p>
+  </Section>
+
+  {/* ── Section 2.4: PHILOSOPHY ── */}
+  <Section background="soft-gray">
+    <p class="text-summit-navy/90 text-lg leading-relaxed">
+      Grounded in servant leadership, systems thinking, and narrative precision. The work is straightforward: help platform providers close the gap between what their products can do and what their customers' organizations can actually absorb.
+    </p>
+  </Section>
+
+  {/* ── Section 2.5: CTA ── */}
+  <BottomCTA heading="If this sounds like the perspective you need, let's talk." />
+</PageLayout>

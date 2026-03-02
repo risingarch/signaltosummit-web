@@ -1,0 +1,144 @@
+---
+import PageLayout from '../../layouts/PageLayout.astro';
+import Section from '../../components/Section.astro';
+import { getCollection } from 'astro:content';
+
+// Get all published signals
+const allSignals = await getCollection('signals', ({ data }) => !data.draft);
+const signals = allSignals.sort((a, b) =>
+  new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
+);
+
+const pillars = [
+  { id: 'all', label: 'All' },
+  { id: 'thesis', label: 'Thesis' },
+  { id: 'pattern-recognition', label: 'Pattern Recognition' },
+  { id: 'buyer-education', label: 'Buyer Education' },
+];
+---
+
+<PageLayout
+  title="Summit Signals"
+  description="Why retail media partnerships fail — and how to read the signals before they do. Analysis and insights from Signal to Summit."
+>
+  {/* ── Section 5.1: HEADER ── */}
+  <section class="py-20 md:py-28">
+    <div class="mx-auto w-full max-w-[45rem] px-6">
+      <h1 class="text-summit-navy mb-4">Summit Signals</h1>
+      <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed mb-8">
+        Why retail media partnerships fail — and how to read the signals before they do.
+      </p>
+
+      {/* Email Capture */}
+      <form class="flex gap-3 max-w-md" id="hub-email-form">
+        <label for="hub-email" class="sr-only">Email address</label>
+        <input
+          type="email"
+          id="hub-email"
+          name="email"
+          placeholder="you@company.com"
+          required
+          class="flex-1 border border-summit-navy/20 rounded-lg px-4 py-3 text-summit-navy bg-white placeholder:text-summit-navy/30 focus:outline-none focus:ring-2 focus:ring-signal-blue focus:border-transparent"
+        />
+        <button
+          type="submit"
+          class="bg-signal-blue text-white text-sm font-medium px-6 py-3 rounded-lg hover:bg-signal-blue/90 transition-colors flex-shrink-0"
+        >
+          Get notified
+        </button>
+      </form>
+      <p class="text-summit-navy/40 text-xs mt-2">Get notified when new analysis drops.</p>
+    </div>
+  </section>
+
+  {/* ── Section 5.2: PILLAR NAVIGATION ── */}
+  <section class="border-b border-summit-navy/10">
+    <div class="mx-auto w-full max-w-[45rem] px-6">
+      <nav class="flex gap-6 -mb-px" aria-label="Content pillars" id="pillar-nav">
+        {pillars.map((pillar) => (
+          <button
+            data-pillar={pillar.id}
+            class:list={[
+              'pillar-tab py-3 text-sm font-medium border-b-2 transition-colors',
+              pillar.id === 'all'
+                ? 'border-signal-blue text-summit-navy'
+                : 'border-transparent text-summit-navy/50 hover:text-summit-navy/70',
+            ]}
+          >
+            {pillar.label}
+          </button>
+        ))}
+      </nav>
+    </div>
+  </section>
+
+  {/* ── Section 5.3: CONTENT CARDS ── */}
+  <Section>
+    {signals.length > 0 ? (
+      <div class="grid grid-cols-1 gap-8" id="content-grid">
+        {signals.map((signal) => (
+          <a
+            href={`/content/${signal.id}`}
+            class="block group"
+            data-pillar={signal.data.pillar}
+          >
+            <article class="bg-soft-gray rounded-lg p-6 md:p-8 hover:bg-ice-blue transition-colors">
+              <span class="inline-block text-xs font-medium text-signal-blue mb-3 uppercase tracking-wider">
+                {signal.data.pillar.replace('-', ' ')}
+              </span>
+              <h3 class="text-summit-navy font-bold text-lg mb-2 group-hover:text-signal-blue transition-colors">
+                {signal.data.title}
+              </h3>
+              <p class="text-summit-navy/70 text-sm leading-relaxed">
+                {signal.data.description}
+              </p>
+              <p class="text-summit-navy/40 text-xs mt-3">
+                {new Date(signal.data.publishDate).toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </p>
+            </article>
+          </a>
+        ))}
+      </div>
+    ) : (
+      <div class="text-center py-12">
+        <p class="text-summit-navy/50 text-lg mb-2">Content is on the way.</p>
+        <p class="text-summit-navy/40 text-sm">
+          Subscribe above to be notified when new analysis drops.
+        </p>
+      </div>
+    )}
+  </Section>
+</PageLayout>
+
+<script>
+  const tabs = document.querySelectorAll('.pillar-tab');
+  const cards = document.querySelectorAll('#content-grid > a');
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+      const pillar = (tab as HTMLElement).dataset.pillar;
+
+      // Update active tab
+      tabs.forEach((t) => {
+        t.classList.remove('border-signal-blue', 'text-summit-navy');
+        t.classList.add('border-transparent', 'text-summit-navy/50');
+      });
+      tab.classList.remove('border-transparent', 'text-summit-navy/50');
+      tab.classList.add('border-signal-blue', 'text-summit-navy');
+
+      // Filter cards
+      cards.forEach((card) => {
+        const cardPillar = (card as HTMLElement).dataset.pillar;
+        if (pillar === 'all' || cardPillar === pillar) {
+          (card as HTMLElement).style.display = '';
+        } else {
+          (card as HTMLElement).style.display = 'none';
+        }
+      });
+    });
+  });
+</script>

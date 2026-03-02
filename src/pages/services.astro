@@ -1,0 +1,172 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+import Section from '../components/Section.astro';
+import BottomCTA from '../components/BottomCTA.astro';
+---
+
+<PageLayout
+  title="Services"
+  description="Four ways to work with Signal to Summit. Each built around a decision you're trying to make. Executive Briefing, Strategy Review, Readiness Assessment, Strategic Advisory Retainer."
+>
+  {/* ── Section 3.1: OPENING FRAME ── */}
+  <section class="py-20 md:py-28">
+    <div class="mx-auto w-full max-w-[45rem] px-6">
+      <h1 class="text-summit-navy mb-4">
+        Four ways to work together. Each built around a decision you're trying to make.
+      </h1>
+      <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed">
+        Every engagement is scoped to your situation. Fixed-price. No hourly billing.
+      </p>
+    </div>
+  </section>
+
+  {/* ── Section 3.2: PRODUCT CARDS ── */}
+
+  {/* Product 1: Executive Briefing */}
+  <Section background="soft-gray">
+    <div class="mb-4">
+      <span class="inline-block bg-signal-blue/10 text-signal-blue text-xs font-medium px-3 py-1 rounded-full">
+        Most clients start here
+      </span>
+    </div>
+    <h2 class="text-summit-navy mb-4">Executive Briefing</h2>
+    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+      "Is this person worth my time — and does he actually understand what we're dealing with?"
+    </p>
+    <p class="text-summit-navy/90 leading-relaxed mb-8">
+      A 60-90 minute session built on the founder's thesis — the three operating realities that kill retail media partnerships — tailored to your specific market position and your customers. Designed for your leadership team, not just one stakeholder.
+    </p>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">What You Walk Away With</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        A clear articulation of the operating dynamics affecting your partnerships, a one-page summary of key patterns identified, and — if there's a fit — a recommendation for what to look at next.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">Engagement Model</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        Fixed price. Single session. No ongoing commitment required.
+      </p>
+    </div>
+
+    <a
+      href="/contact"
+      class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors"
+    >
+      Start here
+    </a>
+  </Section>
+
+  {/* Product 2: Strategy Review */}
+  <Section>
+    <h2 class="text-summit-navy mb-4">Strategy Review</h2>
+    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+      "What's actually going wrong — and what should we do differently?"
+    </p>
+    <p class="text-summit-navy/90 leading-relaxed mb-8">
+      A focused analysis of specific elements in your retail media strategy, examined through the lens of the three operating realities platforms consistently misread. Not a broad audit. A precise look at where operating reality is creating the most friction.
+    </p>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">What You Walk Away With</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        A written assessment with findings, pattern analysis, and specific recommendations. Plus a working session to walk through the analysis and align on next steps.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">Engagement Model</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        Fixed price per element analyzed. Scoped after an initial conversation.
+      </p>
+    </div>
+
+    <a
+      href="/contact"
+      class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors"
+    >
+      Let's scope it
+    </a>
+  </Section>
+
+  {/* Product 3: Readiness Assessment */}
+  <Section background="soft-gray">
+    <h2 class="text-summit-navy mb-4">Readiness Assessment</h2>
+    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+      "Are our customers actually ready to absorb what we're selling them?"
+    </p>
+    <p class="text-summit-navy/90 leading-relaxed mb-8">
+      A two-part diagnostic. First: an onboarding engagement that builds a readiness rubric for your platform — evaluating data quality, process maturity, organizational alignment, and systems integration. Second: a per-deal audit applied before or during implementation to assess whether a specific retailer is ready.
+    </p>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">What You Walk Away With</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        A readiness rubric tailored to your platform. For each audit: a structured roadmap identifying what must be true before implementation will stick.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">Engagement Model</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        Fixed price for onboarding and each per-deal audit. Can be billed directly or passed through to your customers as part of implementation.
+      </p>
+    </div>
+
+    <a
+      href="/contact"
+      class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors"
+    >
+      Explore readiness
+    </a>
+  </Section>
+
+  {/* Product 4: Strategic Advisory Retainer */}
+  <Section>
+    <h2 class="text-summit-navy mb-4">Strategic Advisory Retainer</h2>
+    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+      "Can I keep this person close as we navigate what's ahead?"
+    </p>
+    <p class="text-summit-navy/90 leading-relaxed mb-8">
+      Ongoing access to operator-level judgment. Scheduled strategic sessions combined with on-demand advisory — a thinking partner for the decisions that don't wait for the next meeting.
+    </p>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">What You Walk Away With</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        Monthly or biweekly strategic sessions, plus access between sessions when a situation requires real-time judgment. Flat monthly fee. No per-session billing.
+      </p>
+    </div>
+
+    <div class="mb-8">
+      <h3 class="text-summit-navy font-medium mb-3">Engagement Model</h3>
+      <p class="text-summit-navy/80 leading-relaxed">
+        Flat monthly fee. 3, 6, or 9-month commitment. Limited to a small number of concurrent clients.
+      </p>
+    </div>
+
+    <a
+      href="/contact"
+      class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors"
+    >
+      Let's discuss fit
+    </a>
+  </Section>
+
+  {/* ── Section 3.3: BOTTOM FRAME ── */}
+  <section class="bg-summit-navy py-16 md:py-24">
+    <div class="mx-auto w-full max-w-[45rem] px-6 text-center">
+      <p class="text-white/80 text-lg leading-relaxed mb-8">
+        Not sure where to start? That's what the first conversation is for.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+      >
+        Let's Talk
+      </a>
+    </div>
+  </section>
+</PageLayout>

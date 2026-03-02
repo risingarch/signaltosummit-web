@@ -1,0 +1,26 @@
+---
+import PageLayout from '../layouts/PageLayout.astro';
+---
+
+<PageLayout
+  title="Page Not Found"
+  description="The page you're looking for doesn't exist."
+>
+  <section class="bg-summit-navy min-h-[70vh] flex items-center">
+    <div class="mx-auto w-full max-w-[45rem] px-6 text-center">
+      <p class="text-white/30 text-8xl font-bold mb-6">404</p>
+      <h1 class="text-white text-2xl md:text-3xl font-bold mb-4">
+        This page doesn't exist.
+      </h1>
+      <p class="text-white/60 text-lg leading-relaxed mb-8">
+        The page you're looking for may have been moved or no longer exists.
+      </p>
+      <a
+        href="/"
+        class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors"
+      >
+        Back to homepage
+      </a>
+    </div>
+  </section>
+</PageLayout>
