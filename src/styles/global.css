@@ -9,7 +9,8 @@
 @theme {
   --color-summit-navy: #0C1A2A;
   --color-signal-blue: #1E90FF;
-  --color-signal-blue-dark: #1470B5; /* WCAG AA accessible variant for text (5.23:1 on white) */
+  --color-signal-blue-dark: #1470B5; /* WCAG AA accessible variant for text on white (5.23:1) */
+  --color-signal-blue-btn: #1573C0; /* WCAG AA accessible variant for white text on bg (4.95:1) */
   --color-ice-blue: #E6F4FF;
   --color-soft-gray: #F5F7FA;
   --color-white: #FFFFFF;

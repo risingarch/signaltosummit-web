@@ -12,7 +12,7 @@ interface Props {
 const { href, variant = 'primary', class: className = '' } = Astro.props;
 
 const variantClasses: Record<string, string> = {
-  primary: 'bg-signal-blue text-white hover:bg-signal-blue/90',
+  primary: 'bg-signal-blue-btn text-white hover:bg-signal-blue-dark',
   outline: 'border-2 border-signal-blue-dark text-signal-blue-dark hover:bg-signal-blue hover:text-white',
 };
 ---
