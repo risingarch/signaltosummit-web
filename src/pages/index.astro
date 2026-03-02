@@ -1,25 +1,154 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import Section from '../components/Section.astro';
+import BottomCTA from '../components/BottomCTA.astro';
+import Button from '../components/Button.astro';
 ---
 
 <PageLayout
   title="Signal to Summit"
   description="Strategic advisory for platform leaders whose retail media deals keep stalling — not because the technology fails, but because the approach doesn't account for how retailers actually operate."
 >
-  <section class="bg-summit-navy py-24 md:py-32">
+  {/* ── Section 1.1: HERO ── */}
+  <section class="bg-summit-navy min-h-[85vh] md:min-h-[80vh] flex items-center py-20 md:py-28 lg:py-32">
     <div class="mx-auto w-full max-w-[45rem] px-6">
-      <h1 class="text-white text-3xl md:text-4xl font-bold leading-tight mb-6">
+      <h1 class="text-white text-[1.75rem] md:text-[2rem] font-bold leading-[1.3] tracking-[-0.02em] mb-6">
         Your product isn't the problem. The way it meets the retailer's operating reality is.
       </h1>
-      <p class="text-white/80 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+      <p class="text-white/80 text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
         Strategic advisory for platform leaders whose retail media deals keep stalling — not because the technology fails, but because the approach doesn't account for how retailers actually operate.
       </p>
-      <a
-        href="/contact"
-        class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors"
-      >
-        Let's Talk
-      </a>
+      <Button href="/contact">Let's Talk</Button>
     </div>
   </section>
+
+  {/* ── Section 1.2: PROBLEM RECOGNITION ── */}
+  <Section>
+    <h2 class="text-summit-navy mb-8">You've seen this pattern before.</h2>
+
+    <div class="space-y-12">
+      {/* Block 1 — Coalition Dynamics */}
+      <div>
+        <p class="text-summit-navy/90 leading-relaxed">
+          The RMN lead is aligned. The demo went well. But the deal stalls anyway — because the champion who said yes isn't the person who controls implementation priority, data access, or budget. Deals don't die from product gaps. They die from coalition misalignment your team never mapped.
+        </p>
+      </div>
+
+      {/* Block 2 — Delivery Scaling */}
+      <div>
+        <p class="text-summit-navy/90 leading-relaxed">
+          Your first implementations required heroes. Now every new customer requires the same heroics. Revenue grows linearly with headcount. That's not a scaling challenge — it's a ceiling.
+        </p>
+      </div>
+
+      {/* Block 3 — Absorption Capacity */}
+      <div>
+        <p class="text-summit-navy/90 leading-relaxed">
+          The retailer says they're interested but nothing moves. It's not a priority problem. The organization is operating under constraints your team consistently underestimates — bandwidth, data readiness, process maturity. The limiting factor isn't what they agreed to buy — it's what your approach assumed they could absorb without support.
+        </p>
+      </div>
+    </div>
+  </Section>
+
+  {/* ── Section 1.3: VANTAGE POINT ── */}
+  <Section background="soft-gray">
+    <h2 class="text-summit-navy mb-8">Diagnosed from the inside, not studied from the outside.</h2>
+
+    <div class="space-y-6">
+      <p class="text-summit-navy/90 leading-relaxed">
+        Most advisory firms study retail media from earnings calls and industry events. Signal to Summit was built by someone who spent seven years inside one of the earliest retail media networks in the U.S., watching platform partnerships succeed and fail from the operator's chair.
+      </p>
+      <p class="text-summit-navy/90 leading-relaxed">
+        The patterns that kill deals are invisible from the outside. They're obvious from the inside.
+      </p>
+    </div>
+
+    <p class="text-summit-navy/60 text-sm md:text-[0.9375rem] mt-8 leading-relaxed">
+      Jaiah Kamara — 15+ years in retail media. 7 years building measurement infrastructure at Best Buy Ads.
+    </p>
+  </Section>
+
+  {/* ── Section 1.4: THESIS VIDEO FEATURE ── */}
+  <Section>
+    <h2 class="text-summit-navy mb-2">The Real Challenge in Retail Media</h2>
+    <p class="text-summit-navy/70 text-base md:text-lg mb-8">
+      Why technically strong platforms lose deals they should win.
+    </p>
+
+    {/* Video — YouTube embed replaces this placeholder when URL is provided */}
+    <div class="aspect-video bg-summit-navy rounded-lg flex items-center justify-center mb-6 overflow-hidden">
+      <div class="text-center">
+        <svg class="w-16 h-16 mx-auto text-white/30 mb-3" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <p class="text-white/40 text-sm">Video coming soon</p>
+      </div>
+    </div>
+
+    <a href="/thesis" class="text-signal-blue hover:text-signal-blue/80 font-medium transition-colors">
+      Read the full thesis &rarr;
+    </a>
+  </Section>
+
+  {/* ── Section 1.5: SERVICES PREVIEW ── */}
+  <Section background="soft-gray">
+    <h2 class="text-summit-navy mb-10">How we work together.</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* Card 1 — Executive Briefing */}
+      <div class="bg-white rounded-lg p-6 md:p-8">
+        <p class="text-summit-navy/60 italic text-base mb-4">
+          "Is this person worth my time?"
+        </p>
+        <p class="text-summit-navy/90 leading-relaxed mb-6">
+          A 60-90 minute session built on the founder's thesis, tailored to your specific market position. Designed for your leadership team.
+        </p>
+        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+          Learn more &rarr;
+        </a>
+      </div>
+
+      {/* Card 2 — Strategy Review */}
+      <div class="bg-white rounded-lg p-6 md:p-8">
+        <p class="text-summit-navy/60 italic text-base mb-4">
+          "What's actually going wrong in our approach?"
+        </p>
+        <p class="text-summit-navy/90 leading-relaxed mb-6">
+          A focused analysis of specific elements in your retail media strategy — examined through the lens of the three operating realities most firms miss entirely.
+        </p>
+        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+          Learn more &rarr;
+        </a>
+      </div>
+
+      {/* Card 3 — Readiness Assessment */}
+      <div class="bg-white rounded-lg p-6 md:p-8">
+        <p class="text-summit-navy/60 italic text-base mb-4">
+          "Are our customers ready to absorb what we're selling them?"
+        </p>
+        <p class="text-summit-navy/90 leading-relaxed mb-6">
+          A diagnostic that evaluates whether your retailer customers can actually implement what you've sold — before the deal becomes an expensive lesson.
+        </p>
+        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+          Learn more &rarr;
+        </a>
+      </div>
+
+      {/* Card 4 — Strategic Advisory Retainer */}
+      <div class="bg-white rounded-lg p-6 md:p-8">
+        <p class="text-summit-navy/60 italic text-base mb-4">
+          "Can I keep this person close as we navigate this?"
+        </p>
+        <p class="text-summit-navy/90 leading-relaxed mb-6">
+          Ongoing access to operator-level judgment through scheduled sessions and on-demand advisory. For the decisions that don't wait for the next meeting.
+        </p>
+        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+          Learn more &rarr;
+        </a>
+      </div>
+    </div>
+  </Section>
+
+  {/* ── Section 1.6: BOTTOM CTA ── */}
+  <BottomCTA heading="If this sounds like what you're navigating, let's talk." />
 </PageLayout>
