@@ -2,12 +2,37 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import Section from '../components/Section.astro';
 import BottomCTA from '../components/BottomCTA.astro';
+
+const thesisSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: 'The Real Challenge in Retail Media',
+  description: 'Why technically strong platforms lose deals they should win. The three operating realities that kill retail media partnerships.',
+  author: {
+    '@type': 'Person',
+    name: 'Jaiah Kamara',
+    jobTitle: 'Founder, Signal to Summit',
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Signal to Summit',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://signaltosummit.com/images/logo-horizontal.png',
+    },
+  },
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://signaltosummit.com/thesis',
+  },
+};
 ---
 
 <PageLayout
   title="The Real Challenge in Retail Media"
   description="Why technically strong platforms lose deals they should win. The three operating realities that kill retail media partnerships — coalition dynamics, delivery scaling, and absorption capacity."
   pageType="article"
+  schema={thesisSchema}
 >
   {/* ── Section 4.1: HEADER ── */}
   <section class="py-20 md:py-28">

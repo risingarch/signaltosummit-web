@@ -2,11 +2,33 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import Section from '../components/Section.astro';
 import BottomCTA from '../components/BottomCTA.astro';
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  mainEntity: {
+    '@type': 'Person',
+    name: 'Jaiah Kamara',
+    jobTitle: 'Founder',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Signal to Summit',
+    },
+    description: '15+ years in retail media. 7 years building measurement infrastructure at Best Buy Ads.',
+    image: 'https://signaltosummit.com/images/jaiah-kamara-headshot.jpeg',
+    alumniOf: [
+      { '@type': 'Organization', name: 'Best Buy Ads' },
+      { '@type': 'EducationalOrganization', name: 'MIT UPRO AI Leadership Program' },
+    ],
+    knowsAbout: ['Retail Media', 'Platform Strategy', 'Coalition Dynamics', 'Measurement Infrastructure'],
+  },
+};
 ---
 
 <PageLayout
   title="About"
   description="Jaiah Kamara spent 15+ years in retail media, including 7 years building measurement infrastructure at Best Buy Ads. Signal to Summit brings operator-level insight to platform providers."
+  schema={aboutSchema}
 >
   {/* ── Section 2.1: OPENING FRAME ── */}
   <section class="py-20 md:py-28">

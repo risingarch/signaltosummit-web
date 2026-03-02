@@ -1,0 +1,39 @@
+# Signal to Summit
+
+> Strategic advisory for retail media platform leaders.
+
+Signal to Summit helps technically strong platforms stop losing deals they should win. Founded by Jaiah Kamara, who spent 15+ years in retail media — including seven years building measurement infrastructure at Best Buy Ads — the firm diagnoses the three operating realities that kill retail media partnerships before they have a chance to deliver value.
+
+## Core Thesis
+
+The retail media industry has a pattern: technically strong platforms consistently lose deals they should win. Not because the product fails, but because the approach doesn't account for the retailer's operating reality. Three misreads drive this pattern:
+
+1. **Coalition Dynamics** — The champion who says yes isn't the person who controls implementation priority, data access, or budget. Deals die from coalition misalignment, not product gaps.
+2. **Delivery Scaling** — Early implementations succeed through heroics. Then every new customer requires the same heroics. Revenue grows linearly with headcount. The delivery model becomes a ceiling.
+3. **Absorption Capacity** — The retailer's ability to absorb new technology is not determined by interest or intent. It's determined by operational capacity — bandwidth, data readiness, process maturity, organizational alignment.
+
+## Services
+
+- **Executive Briefing**: A 60-90 minute session built on the founder's thesis, tailored to your specific market position. Fixed price. Single session.
+- **Strategy Review**: A focused analysis of specific elements in your retail media strategy, examined through the lens of the three operating realities.
+- **Readiness Assessment**: A diagnostic evaluating whether retailer customers can actually implement what you've sold — data quality, process maturity, organizational alignment.
+- **Strategic Advisory Retainer**: Ongoing access to operator-level judgment. Scheduled strategic sessions combined with on-demand advisory.
+
+## Founder
+
+Jaiah Kamara — 15+ years in retail media. Seven years building measurement infrastructure at Best Buy Ads. Currently completing the MIT UPRO AI Leadership Program. Creator of Summit Signals, an ongoing analysis series on retail media partnership dynamics.
+
+## Pages
+
+- Home: https://signaltosummit.com/
+- About: https://signaltosummit.com/about
+- Services: https://signaltosummit.com/services
+- Thesis: https://signaltosummit.com/thesis
+- Summit Signals (Content): https://signaltosummit.com/content
+- Contact: https://signaltosummit.com/contact
+- Privacy Policy: https://signaltosummit.com/privacy
+
+## Contact
+
+- Email: jaiah@signaltosummit.com
+- Website: https://signaltosummit.com

@@ -3,11 +3,38 @@ import PageLayout from '../layouts/PageLayout.astro';
 import Section from '../components/Section.astro';
 import BottomCTA from '../components/BottomCTA.astro';
 import Button from '../components/Button.astro';
+
+const homeSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfessionalService',
+  name: 'Signal to Summit',
+  description: 'Strategic advisory for retail media platform leaders. Helping technically strong platforms stop losing deals they should win.',
+  url: 'https://signaltosummit.com',
+  priceRange: '$$$$',
+  areaServed: 'US',
+  serviceType: 'Strategic Advisory',
+  founder: {
+    '@type': 'Person',
+    name: 'Jaiah Kamara',
+    jobTitle: 'Founder',
+  },
+  hasOfferCatalog: {
+    '@type': 'OfferCatalog',
+    name: 'Advisory Services',
+    itemListElement: [
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Executive Briefing', description: 'A 60-90 minute session built on the founder\'s thesis, tailored to your specific market position.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Strategy Review', description: 'A focused analysis of specific elements in your retail media strategy.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Readiness Assessment', description: 'A diagnostic evaluating whether your retailer customers can implement what you\'ve sold.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Strategic Advisory Retainer', description: 'Ongoing access to operator-level judgment through scheduled sessions and on-demand advisory.' } },
+    ],
+  },
+};
 ---
 
 <PageLayout
   title="Signal to Summit"
   description="Strategic advisory for platform leaders whose retail media deals keep stalling — not because the technology fails, but because the approach doesn't account for how retailers actually operate."
+  schema={homeSchema}
 >
   {/* ── Section 1.1: HERO ── */}
   <section class="bg-summit-navy min-h-[85vh] md:min-h-[80vh] flex items-center py-20 md:py-28 lg:py-32">
@@ -85,7 +112,7 @@ import Button from '../components/Button.astro';
       </div>
     </div>
 
-    <a href="/thesis" class="text-signal-blue hover:text-signal-blue/80 font-medium transition-colors">
+    <a href="/thesis" class="text-signal-blue-dark hover:text-signal-blue font-medium transition-colors">
       Read the full thesis &rarr;
     </a>
   </Section>
@@ -103,7 +130,7 @@ import Button from '../components/Button.astro';
         <p class="text-summit-navy/90 leading-relaxed mb-6">
           A 60-90 minute session built on the founder's thesis, tailored to your specific market position. Designed for your leadership team.
         </p>
-        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+        <a href="/services" class="text-signal-blue-dark hover:text-signal-blue font-medium text-sm transition-colors">
           Learn more &rarr;
         </a>
       </div>
@@ -116,7 +143,7 @@ import Button from '../components/Button.astro';
         <p class="text-summit-navy/90 leading-relaxed mb-6">
           A focused analysis of specific elements in your retail media strategy — examined through the lens of the three operating realities most firms miss entirely.
         </p>
-        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+        <a href="/services" class="text-signal-blue-dark hover:text-signal-blue font-medium text-sm transition-colors">
           Learn more &rarr;
         </a>
       </div>
@@ -129,7 +156,7 @@ import Button from '../components/Button.astro';
         <p class="text-summit-navy/90 leading-relaxed mb-6">
           A diagnostic that evaluates whether your retailer customers can actually implement what you've sold — before the deal becomes an expensive lesson.
         </p>
-        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+        <a href="/services" class="text-signal-blue-dark hover:text-signal-blue font-medium text-sm transition-colors">
           Learn more &rarr;
         </a>
       </div>
@@ -142,7 +169,7 @@ import Button from '../components/Button.astro';
         <p class="text-summit-navy/90 leading-relaxed mb-6">
           Ongoing access to operator-level judgment through scheduled sessions and on-demand advisory. For the decisions that don't wait for the next meeting.
         </p>
-        <a href="/services" class="text-signal-blue hover:text-signal-blue/80 font-medium text-sm transition-colors">
+        <a href="/services" class="text-signal-blue-dark hover:text-signal-blue font-medium text-sm transition-colors">
           Learn more &rarr;
         </a>
       </div>

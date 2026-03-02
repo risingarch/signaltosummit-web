@@ -19,25 +19,51 @@ const pillarLabels: Record<string, string> = {
   'pattern-recognition': 'Pattern Recognition',
   'buyer-education': 'Buyer Education',
 };
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Article',
+  headline: signal.data.title,
+  description: signal.data.description,
+  author: {
+    '@type': 'Person',
+    name: signal.data.author,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: 'Signal to Summit',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://signaltosummit.com/images/logo-horizontal.png',
+    },
+  },
+  datePublished: new Date(signal.data.publishDate).toISOString(),
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': `https://signaltosummit.com/content/${signal.id}`,
+  },
+  articleSection: pillarLabels[signal.data.pillar] || signal.data.pillar,
+};
 ---
 
 <PageLayout
   title={signal.data.title}
   description={signal.data.description}
   pageType="article"
+  schema={articleSchema}
 >
   <article>
     {/* Header */}
     <section class="py-20 md:py-28">
       <div class="mx-auto w-full max-w-[45rem] px-6">
-        <span class="inline-block text-xs font-medium text-signal-blue mb-4 uppercase tracking-wider">
+        <span class="inline-block text-xs font-medium text-signal-blue-dark mb-4 uppercase tracking-wider">
           {pillarLabels[signal.data.pillar] || signal.data.pillar}
         </span>
         <h1 class="text-summit-navy mb-4">{signal.data.title}</h1>
         <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed mb-4">
           {signal.data.description}
         </p>
-        <p class="text-summit-navy/40 text-sm">
+        <p class="text-summit-navy/50 text-sm">
           By {signal.data.author} &middot;{' '}
           {new Date(signal.data.publishDate).toLocaleDateString('en-US', {
             year: 'numeric',

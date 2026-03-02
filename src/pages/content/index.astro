@@ -47,7 +47,7 @@ const pillars = [
           Get notified
         </button>
       </form>
-      <p class="text-summit-navy/40 text-xs mt-2">Get notified when new analysis drops.</p>
+      <p class="text-summit-navy/50 text-xs mt-2">Get notified when new analysis drops.</p>
     </div>
   </section>
 
@@ -83,7 +83,7 @@ const pillars = [
             data-pillar={signal.data.pillar}
           >
             <article class="bg-soft-gray rounded-lg p-6 md:p-8 hover:bg-ice-blue transition-colors">
-              <span class="inline-block text-xs font-medium text-signal-blue mb-3 uppercase tracking-wider">
+              <span class="inline-block text-xs font-medium text-signal-blue-dark mb-3 uppercase tracking-wider">
                 {signal.data.pillar.replace('-', ' ')}
               </span>
               <h3 class="text-summit-navy font-bold text-lg mb-2 group-hover:text-signal-blue transition-colors">
@@ -92,7 +92,7 @@ const pillars = [
               <p class="text-summit-navy/70 text-sm leading-relaxed">
                 {signal.data.description}
               </p>
-              <p class="text-summit-navy/40 text-xs mt-3">
+              <p class="text-summit-navy/50 text-xs mt-3">
                 {new Date(signal.data.publishDate).toLocaleDateString('en-US', {
                   year: 'numeric',
                   month: 'long',
@@ -106,7 +106,7 @@ const pillars = [
     ) : (
       <div class="text-center py-12">
         <p class="text-summit-navy/50 text-lg mb-2">Content is on the way.</p>
-        <p class="text-summit-navy/40 text-sm">
+        <p class="text-summit-navy/50 text-sm">
           Subscribe above to be notified when new analysis drops.
         </p>
       </div>

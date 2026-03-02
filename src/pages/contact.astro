@@ -1,10 +1,22 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'Signal to Summit',
+    email: 'jaiah@signaltosummit.com',
+    url: 'https://signaltosummit.com',
+  },
+};
 ---
 
 <PageLayout
   title="Contact"
   description="Tell Signal to Summit what you're navigating. If there's a fit, we'll find time for a conversation."
+  schema={contactSchema}
 >
   {/* ── Section 6.1: OPENING FRAME ── */}
   <section class="py-20 md:py-28">

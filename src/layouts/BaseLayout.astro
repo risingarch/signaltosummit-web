@@ -8,6 +8,7 @@ interface Props {
   ogImage?: string;
   canonicalURL?: string;
   pageType?: 'website' | 'article';
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
@@ -16,10 +17,43 @@ const {
   ogImage = '/images/og-default.png',
   canonicalURL = Astro.url.href,
   pageType = 'website',
+  schema,
 } = Astro.props;
 
 const siteName = 'Signal to Summit';
 const fullTitle = title === 'Signal to Summit' ? title : `${title} | ${siteName}`;
+
+// Organization schema (site-wide)
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Signal to Summit',
+  legalName: 'Signal to Summit LLC',
+  url: 'https://signaltosummit.com',
+  logo: 'https://signaltosummit.com/images/logo-horizontal.png',
+  description: 'Strategic advisory for retail media platform leaders.',
+  founder: {
+    '@type': 'Person',
+    name: 'Jaiah Kamara',
+    jobTitle: 'Founder',
+  },
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'jaiah@signaltosummit.com',
+    contactType: 'sales',
+  },
+};
+
+// WebSite schema (site-wide)
+const webSiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: siteName,
+  url: 'https://signaltosummit.com',
+};
+
+// Combine all schemas
+const allSchemas = [organizationSchema, webSiteSchema, ...(Array.isArray(schema) ? schema : schema ? [schema] : [])];
 ---
 
 <!doctype html>
@@ -57,6 +91,11 @@ const fullTitle = title === 'Signal to Summit' ? title : `${title} | ${siteName}
       title="Summit Signals — Signal to Summit"
       href="/content/feed.xml"
     />
+
+    <!-- Structured Data (JSON-LD) -->
+    {allSchemas.map((s) => (
+      <script type="application/ld+json" set:html={JSON.stringify(s)} />
+    ))}
   </head>
   <body class="min-h-screen flex flex-col">
     <a href="#main-content" class="skip-link">Skip to main content</a>
