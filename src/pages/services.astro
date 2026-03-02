@@ -59,11 +59,11 @@ const servicesSchema = {
   </section>
 
   {/* ── Section Break: Sherpa Image ── */}
-  <section class="w-full h-48 md:h-64 lg:h-80 overflow-hidden">
+  <section class="w-full overflow-hidden">
     <img
       src="/images/sherpa-rope-bridge.jpg"
       alt="Sherpa leading across a rope bridge — navigating complexity with experience"
-      class="w-full h-full object-cover object-center"
+      class="w-full h-auto max-h-[28rem] object-cover object-[center_40%]"
       loading="lazy"
       width="1200"
       height="675"
@@ -81,7 +81,7 @@ const servicesSchema = {
       </span>
     </div>
     <h2 class="text-summit-navy mb-4">Executive Briefing</h2>
-    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+    <p class="text-summit-navy/80 italic text-base md:text-lg mb-6">
       "Is this person worth my time — and does he actually understand what we're dealing with?"
     </p>
     <p class="text-summit-navy/90 leading-relaxed mb-8">
@@ -114,7 +114,7 @@ const servicesSchema = {
   <Section>
     <div class="w-12 h-0.5 bg-signal-blue mb-8"></div>
     <h2 class="text-summit-navy mb-4">Strategy Review</h2>
-    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+    <p class="text-summit-navy/80 italic text-base md:text-lg mb-6">
       "What's actually going wrong — and what should we do differently?"
     </p>
     <p class="text-summit-navy/90 leading-relaxed mb-8">
@@ -147,12 +147,23 @@ const servicesSchema = {
   <Section background="soft-gray">
     <div class="w-12 h-0.5 bg-signal-blue mb-8"></div>
     <h2 class="text-summit-navy mb-4">Readiness Assessment</h2>
-    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+    <p class="text-summit-navy/80 italic text-base md:text-lg mb-6">
       "Are our customers actually ready to absorb what we're selling them?"
     </p>
-    <p class="text-summit-navy/90 leading-relaxed mb-8">
-      A two-part diagnostic. First: an onboarding engagement that builds a readiness rubric for your platform — evaluating data quality, process maturity, organizational alignment, and systems integration. Second: a per-deal audit applied before or during implementation to assess whether a specific retailer is ready.
-    </p>
+    <div class="space-y-6 mb-8">
+      <div>
+        <p class="text-summit-navy font-semibold text-base mb-2">Part One: Readiness Rubric</p>
+        <p class="text-summit-navy/90 leading-relaxed">
+          An onboarding engagement that builds a readiness rubric for your platform — evaluating data quality, process maturity, organizational alignment, and systems integration.
+        </p>
+      </div>
+      <div>
+        <p class="text-summit-navy font-semibold text-base mb-2">Part Two: Per-Deal Audit</p>
+        <p class="text-summit-navy/90 leading-relaxed">
+          A per-deal audit applied before or during implementation to assess whether a specific retailer is ready.
+        </p>
+      </div>
+    </div>
 
     <div class="mb-8">
       <h3 class="text-summit-navy font-medium mb-3">What You Walk Away With</h3>
@@ -180,7 +191,7 @@ const servicesSchema = {
   <Section>
     <div class="w-12 h-0.5 bg-signal-blue mb-8"></div>
     <h2 class="text-summit-navy mb-4">Strategic Advisory</h2>
-    <p class="text-summit-navy/60 italic text-base md:text-lg mb-6">
+    <p class="text-summit-navy/80 italic text-base md:text-lg mb-6">
       "Can I keep this person close as we navigate what's ahead?"
     </p>
     <p class="text-summit-navy/90 leading-relaxed mb-8">

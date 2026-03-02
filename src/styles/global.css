@@ -19,13 +19,13 @@
   --font-family-sans: 'Inter Variable', 'Inter', system-ui, -apple-system, sans-serif;
 
   /* Desktop sizes */
-  --font-size-h1: 2rem;       /* 32px */
-  --font-size-h2: 1.5rem;     /* 24px */
-  --font-size-h3: 1.25rem;    /* 20px */
+  --font-size-h1: 2.25rem;    /* 36px */
+  --font-size-h2: 1.75rem;    /* 28px */
+  --font-size-h3: 1.375rem;   /* 22px */
   --font-size-body: 1.125rem; /* 18px */
   --font-size-thesis: 1.125rem; /* 18px */
-  --font-size-small: 0.875rem; /* 14px */
-  --font-size-label: 0.75rem;  /* 12px */
+  --font-size-small: 0.9375rem; /* 15px */
+  --font-size-label: 0.8125rem; /* 13px */
 
   /* Line heights */
   --line-height-heading: 1.3;
@@ -59,14 +59,16 @@
     font-family: var(--font-family-sans);
     color: var(--color-summit-navy);
     scroll-behavior: smooth;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+    text-rendering: optimizeLegibility;
   }
 
   body {
     background-color: var(--color-white);
     line-height: var(--line-height-body);
     font-size: var(--font-size-body);
+    font-weight: 400;
   }
 
   h1 {
@@ -80,20 +82,20 @@
     font-size: var(--font-size-h2);
     font-weight: 700;
     line-height: var(--line-height-heading);
-    letter-spacing: -0.02em;
+    letter-spacing: -0.015em;
   }
 
   h3 {
     font-size: var(--font-size-h3);
-    font-weight: 500;
+    font-weight: 600;
     line-height: var(--line-height-subheading);
   }
 
   /* Mobile typography adjustments */
   @media (max-width: 768px) {
-    h1 { font-size: 1.75rem; }   /* 28px */
-    h2 { font-size: 1.375rem; }  /* 22px */
-    h3 { font-size: 1.125rem; }  /* 18px */
+    h1 { font-size: 1.875rem; }  /* 30px */
+    h2 { font-size: 1.5rem; }    /* 24px */
+    h3 { font-size: 1.25rem; }   /* 20px */
     body { font-size: 1rem; }    /* 16px */
   }
 

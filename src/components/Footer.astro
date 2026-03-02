@@ -16,8 +16,8 @@ const navLinks = [
 ---
 
 <footer class="bg-summit-navy text-white/80 border-t border-white/10">
-  <div class="mx-auto max-w-7xl px-6 pt-20 md:pt-24 pb-16 md:pb-20">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+  <div class="mx-auto max-w-7xl px-6 pt-16 md:pt-20 pb-12 md:pb-16">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
       <!-- Column 1: Logo + Description -->
       <div>
         <a href="/" aria-label="Signal to Summit — Home">
@@ -36,7 +36,7 @@ const navLinks = [
 
       <!-- Column 2: Navigation -->
       <div>
-        <h3 class="text-white font-medium text-sm mb-4">Navigation</h3>
+        <h3 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Navigation</h3>
         <ul class="space-y-2">
           {navLinks.map((link) => (
             <li>
@@ -58,7 +58,7 @@ const navLinks = [
 
       <!-- Column 3: Email Signup -->
       <div>
-        <h3 class="text-white font-medium text-sm mb-4">Stay informed</h3>
+        <h3 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Stay informed</h3>
         <p class="text-sm text-white/60 mb-4">Get notified when new analysis drops.</p>
         <form class="flex gap-2" id="footer-email-form">
           <label for="footer-email" class="sr-only">Email address</label>
