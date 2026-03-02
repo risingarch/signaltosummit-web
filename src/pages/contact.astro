@@ -20,7 +20,9 @@ const contactSchema = {
 >
   {/* ── Section 6.1: OPENING FRAME ── */}
   <section class="py-20 md:py-28">
-    <div class="mx-auto w-full max-w-[45rem] px-6">
+    <div class="mx-auto w-full max-w-6xl px-6">
+      <div class="md:grid md:grid-cols-[1fr_auto] md:gap-16 md:items-start">
+        <div class="max-w-[45rem]">
       <h1 class="text-summit-navy mb-4">
         Let's see if there's a fit.
       </h1>
@@ -115,6 +117,18 @@ const contactSchema = {
           <p class="text-summit-navy text-lg leading-relaxed" id="confirmation-message">
             Thanks. I'll review what you've shared and follow up within two business days.
           </p>
+        </div>
+      </div>
+        </div>
+        {/* Decorative mountain artwork — desktop only */}
+        <div class="hidden md:block w-64 lg:w-80 flex-shrink-0 mt-8">
+          <img
+            src="/images/mountain-artwork.png"
+            alt=""
+            class="w-full opacity-20"
+            aria-hidden="true"
+            loading="lazy"
+          />
         </div>
       </div>
     </div>

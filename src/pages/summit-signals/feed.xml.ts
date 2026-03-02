@@ -25,7 +25,7 @@ export async function GET(context: APIContext) {
         title: signal.data.title,
         pubDate: new Date(signal.data.publishDate),
         description: signal.data.description,
-        link: `/content/${signal.id}`,
+        link: `/summit-signals/${signal.id}`,
         author: signal.data.author,
         categories: [signal.data.pillar],
       })),

@@ -9,14 +9,14 @@ const currentYear = new Date().getFullYear();
 const navLinks = [
   { label: 'Home', href: '/' },
   { label: 'Services', href: '/services' },
-  { label: 'Summit Signals', href: '/content' },
+  { label: 'Summit Signals', href: '/summit-signals' },
   { label: 'About', href: '/about' },
   { label: 'Contact', href: '/contact' },
 ];
 ---
 
-<footer class="bg-summit-navy text-white/80">
-  <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+<footer class="bg-summit-navy text-white/80 border-t border-white/10">
+  <div class="mx-auto max-w-7xl px-6 pt-20 md:pt-24 pb-16 md:pb-20">
     <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
       <!-- Column 1: Logo + Description -->
       <div>
@@ -86,10 +86,10 @@ const navLinks = [
         &copy; {currentYear} Signal to Summit LLC. All rights reserved.
       </p>
       <div class="flex gap-6">
-        <a href="/privacy" class="text-xs text-white/60 hover:text-white/60 transition-colors">
+        <a href="/privacy" class="text-xs text-white/60 hover:text-white transition-colors">
           Privacy Policy
         </a>
-        <a href="/privacy#sms-terms" class="text-xs text-white/60 hover:text-white/60 transition-colors">
+        <a href="/privacy#sms-terms" class="text-xs text-white/60 hover:text-white transition-colors">
           SMS Terms & Conditions
         </a>
       </div>
