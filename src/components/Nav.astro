@@ -1,0 +1,114 @@
+---
+/**
+ * Nav — Persistent top navigation
+ * Logo (horizontal lockup) + nav links + "Let's Talk" CTA
+ * Sticky, mobile hamburger menu
+ */
+const currentPath = Astro.url.pathname;
+
+const navLinks = [
+  { label: 'Services', href: '/services' },
+  { label: 'Summit Signals', href: '/content' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
+
+function isActive(href: string): boolean {
+  if (href === '/') return currentPath === '/';
+  return currentPath.startsWith(href);
+}
+---
+
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-soft-gray">
+  <nav class="mx-auto max-w-7xl px-6 flex items-center justify-between h-16 md:h-20" aria-label="Main navigation">
+    <!-- Logo -->
+    <a href="/" class="flex-shrink-0" aria-label="Signal to Summit — Home">
+      <img
+        src="/images/logo-horizontal.png"
+        alt="Signal to Summit"
+        class="h-8 md:h-10 w-auto"
+        width="200"
+        height="40"
+      />
+    </a>
+
+    <!-- Desktop Nav -->
+    <div class="hidden md:flex items-center gap-8">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            'text-sm font-medium transition-colors',
+            isActive(link.href)
+              ? 'text-summit-navy'
+              : 'text-summit-navy/60 hover:text-summit-navy',
+          ]}
+          aria-current={isActive(link.href) ? 'page' : undefined}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="bg-signal-blue text-white text-sm font-medium px-6 py-2.5 rounded-lg hover:bg-signal-blue/90 transition-colors"
+      >
+        Let's Talk
+      </a>
+    </div>
+
+    <!-- Mobile Hamburger -->
+    <button
+      id="mobile-menu-button"
+      class="md:hidden p-2 text-summit-navy"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <path id="hamburger-icon" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <path id="close-icon" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-soft-gray bg-white">
+    <div class="px-6 py-4 space-y-3">
+      {navLinks.map((link) => (
+        <a
+          href={link.href}
+          class:list={[
+            'block text-base font-medium py-2',
+            isActive(link.href)
+              ? 'text-summit-navy'
+              : 'text-summit-navy/60',
+          ]}
+          aria-current={isActive(link.href) ? 'page' : undefined}
+        >
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="block text-center bg-signal-blue text-white font-medium px-6 py-3 rounded-lg mt-2"
+      >
+        Let's Talk
+      </a>
+    </div>
+  </div>
+</header>
+
+<script>
+  const button = document.getElementById('mobile-menu-button');
+  const menu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  button?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden') === false;
+    button.setAttribute('aria-expanded', String(isOpen));
+    button.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+    hamburgerIcon?.classList.toggle('hidden', isOpen);
+    closeIcon?.classList.toggle('hidden', !isOpen);
+  });
+</script>

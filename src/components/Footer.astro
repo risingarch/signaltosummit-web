@@ -1,0 +1,98 @@
+---
+/**
+ * Footer — Global footer on all pages
+ * Logo, nav links, legal links, copyright, email signup
+ * Summit Navy or dark background
+ */
+const currentYear = new Date().getFullYear();
+
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Services', href: '/services' },
+  { label: 'Summit Signals', href: '/content' },
+  { label: 'About', href: '/about' },
+  { label: 'Contact', href: '/contact' },
+];
+---
+
+<footer class="bg-summit-navy text-white/80">
+  <div class="mx-auto max-w-7xl px-6 py-16 md:py-20">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
+      <!-- Column 1: Logo + Description -->
+      <div>
+        <a href="/" aria-label="Signal to Summit — Home">
+          <img
+            src="/images/logo-horizontal-white.png"
+            alt="Signal to Summit"
+            class="h-8 w-auto mb-4"
+            width="200"
+            height="32"
+          />
+        </a>
+        <p class="text-sm text-white/60 leading-relaxed max-w-xs">
+          Strategic advisory for retail media platform leaders.
+        </p>
+      </div>
+
+      <!-- Column 2: Navigation -->
+      <div>
+        <h3 class="text-white font-medium text-sm mb-4">Navigation</h3>
+        <ul class="space-y-2">
+          {navLinks.map((link) => (
+            <li>
+              <a
+                href={link.href}
+                class="text-sm text-white/60 hover:text-white transition-colors"
+              >
+                {link.label}
+              </a>
+            </li>
+          ))}
+          <li>
+            <a href="/contact" class="text-sm text-signal-blue hover:text-signal-blue/80 transition-colors">
+              Let's Talk
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 3: Email Signup -->
+      <div>
+        <h3 class="text-white font-medium text-sm mb-4">Stay informed</h3>
+        <p class="text-sm text-white/60 mb-4">Get notified when new analysis drops.</p>
+        <form class="flex gap-2" id="footer-email-form">
+          <label for="footer-email" class="sr-only">Email address</label>
+          <input
+            type="email"
+            id="footer-email"
+            name="email"
+            placeholder="you@company.com"
+            required
+            class="flex-1 bg-white/10 border border-white/20 rounded-lg px-4 py-2.5 text-sm text-white placeholder:text-white/40 focus:outline-none focus:ring-2 focus:ring-signal-blue"
+          />
+          <button
+            type="submit"
+            class="bg-signal-blue text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-signal-blue/90 transition-colors flex-shrink-0"
+          >
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Bottom Row -->
+    <div class="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-xs text-white/40">
+        &copy; {currentYear} Signal to Summit LLC. All rights reserved.
+      </p>
+      <div class="flex gap-6">
+        <a href="/privacy" class="text-xs text-white/40 hover:text-white/60 transition-colors">
+          Privacy Policy
+        </a>
+        <a href="/privacy#sms-terms" class="text-xs text-white/40 hover:text-white/60 transition-colors">
+          SMS Terms & Conditions
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

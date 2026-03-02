@@ -1,0 +1,31 @@
+---
+/**
+ * BottomCTA — Full-bleed Summit Navy CTA section
+ * Used at the bottom of every page.
+ */
+interface Props {
+  heading: string;
+  buttonText?: string;
+  buttonHref?: string;
+}
+
+const {
+  heading,
+  buttonText = "Let's Talk",
+  buttonHref = '/contact',
+} = Astro.props;
+---
+
+<section class="bg-summit-navy py-16 md:py-24">
+  <div class="mx-auto w-full max-w-[45rem] px-6 text-center">
+    <h2 class="text-white text-2xl md:text-[1.75rem] font-bold leading-tight mb-8">
+      {heading}
+    </h2>
+    <a
+      href={buttonHref}
+      class="inline-block bg-signal-blue text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue/90 transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+    >
+      {buttonText}
+    </a>
+  </div>
+</section>

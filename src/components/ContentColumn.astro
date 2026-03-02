@@ -1,0 +1,16 @@
+---
+/**
+ * ContentColumn — 720px max-width content container
+ * Used for body content on all pages. Full-bleed sections
+ * (hero, bottom CTA) extend to viewport; body content stays narrow.
+ */
+interface Props {
+  class?: string;
+}
+
+const { class: className = '' } = Astro.props;
+---
+
+<div class:list={['mx-auto w-full max-w-[45rem] px-6', className]}>
+  <slot />
+</div>

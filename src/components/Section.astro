@@ -1,0 +1,44 @@
+---
+/**
+ * Section — Major content section with proper spacing
+ * Desktop: 96px padding. Mobile: 64px padding.
+ * Supports full-bleed backgrounds with narrow content column.
+ */
+interface Props {
+  background?: 'white' | 'navy' | 'ice-blue' | 'soft-gray';
+  fullBleed?: boolean;
+  class?: string;
+  id?: string;
+}
+
+const {
+  background = 'white',
+  fullBleed = false,
+  class: className = '',
+  id,
+} = Astro.props;
+
+const bgClasses: Record<string, string> = {
+  white: 'bg-white',
+  navy: 'bg-summit-navy text-white',
+  'ice-blue': 'bg-ice-blue',
+  'soft-gray': 'bg-soft-gray',
+};
+---
+
+<section
+  id={id}
+  class:list={[
+    'py-16 md:py-24',
+    bgClasses[background],
+    className,
+  ]}
+>
+  {fullBleed ? (
+    <slot />
+  ) : (
+    <div class="mx-auto w-full max-w-[45rem] px-6">
+      <slot />
+    </div>
+  )}
+</section>
