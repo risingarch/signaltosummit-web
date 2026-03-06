@@ -40,6 +40,8 @@ Deals don't fall apart because of your product. They fall apart because platform
 
 I've watched deals fall apart — not because of missing features, but because the platform provider misread the operating reality inside the retail media network. These are the three most common misreads. If you're selling into retail media, these are the patterns that kill your deals late in the cycle.
 
+![The three misreads that kill retail media deals: Scale Failure, Coalition Dynamics, and Absorption Capacity — interconnected in a triangle around where deals fall apart](/images/thesis/three-misreads.svg)
+
 ### Misread #1: "Once Implemented, Scale Will Follow"
 
 **Reality: scale fails because delivery becomes a manual service business.**
@@ -106,6 +108,12 @@ Some retail media networks are figuring this out. But first, you need to underst
 
 Retail media leaders wake up every day facing three simultaneous pressures.
 
+<div style="max-width: 65%; margin: 2.5rem auto;">
+
+![Three pressures facing retail media leaders: Complexity Debt, Proof Gaps, and Growth Pressure — each compounding the others](/images/thesis/three-pressures.svg)
+
+</div>
+
 ### Complexity Debt: The Scale Ceiling
 
 Retail media can't scale efficiently inside legacy retail. This isn't minor friction — it's structural complexity that caps growth no matter how much demand you have.
@@ -157,6 +165,8 @@ The networks that win aren't just fighting through these pressures — they're b
 ## How Winning Organizations Close the Gap
 
 Retail media doesn't fail because of lack of ambition or technology. It fails because no one designs the operating system that connects growth ambition, execution reality, and decision-grade proof. The networks that win build that system intentionally. It has three layers.
+
+![The operating system for winning retail media organizations: Delivery System, Proof System, and Alignment System working together](/images/thesis/operating-system.svg)
 
 ### Scale Requires a Delivery System
 
