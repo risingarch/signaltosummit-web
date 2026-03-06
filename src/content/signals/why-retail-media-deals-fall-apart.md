@@ -12,7 +12,7 @@ faqItems:
   - question: "Why do retail media deals fall apart?"
     answer: "Deals don't fall apart because of missing features. They fall apart because platform providers underestimate the delivery friction, the coalition dynamics, and the capacity constraints inside retail media organizations."
   - question: "What are the three misreads in retail media?"
-    answer: "The three misreads are: (1) assuming scale will follow implementation, (2) assuming the RMN lead's alignment means the deal will move, and (3) assuming slow movement is a priority problem rather than a capacity constraint."
+    answer: "The three misreads are: (1) assuming scale will follow implementation, (2) assuming the retail media network lead's alignment means the deal will move, and (3) assuming slow movement is a priority problem rather than a capacity constraint."
   - question: "How can platform providers win more retail media deals?"
     answer: "Winning organizations build three systems: a delivery system that removes constraints instead of adding tools, a proof system that operationalizes decision-grade measurement, and an alignment system that designs stakeholder buy-in up front."
 ---
@@ -25,7 +25,7 @@ faqItems:
 
 ## Why Deals Fall Apart in Retail Media
 
-You might have a killer product that retailers should buy. You nail the demo. The RMN lead loves it. You're close to completing your SOW — and the deal falls apart.
+You might have a killer product that retailers should buy. You nail the demo. The retail media lead loves it. You're close to completing your SOW — and the deal falls apart.
 
 Most people think the deal dies because of missing features or budget constraints. But after 15 years in retail — seven of those years building measurement infrastructure at a top-10 retail media network — here's what I've actually seen:
 
@@ -55,7 +55,7 @@ Is it time and throughput — cycle time, turnaround, SLA performance? Is it pro
 
 If you can't point to one of these and show measurable improvement fast, you're asking a team that's already underwater to learn another tool. And they won't.
 
-### Misread #2: "The RMN Lead Is Aligned — This Deal Will Move"
+### Misread #2: "The Retail Media Lead Is Aligned — This Deal Will Move"
 
 **Reality: retail media leaders don't buy alone. They operate inside a coalition with veto power.**
 

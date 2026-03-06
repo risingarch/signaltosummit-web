@@ -26,9 +26,9 @@ function isActive(href: string): boolean {
       <img
         src="/images/logo-horizontal.png"
         alt="Signal to Summit"
-        class="h-12 md:h-14 w-auto"
+        class="h-14 md:h-16 w-auto"
         width="240"
-        height="48"
+        height="56"
       />
     </a>
 
@@ -38,7 +38,7 @@ function isActive(href: string): boolean {
         <a
           href={link.href}
           class:list={[
-            'text-[0.9375rem] font-bold transition-colors',
+            'text-base font-bold transition-colors',
             isActive(link.href)
               ? 'text-summit-navy'
               : 'text-summit-navy hover:text-signal-blue-dark',

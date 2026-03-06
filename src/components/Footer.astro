@@ -1,24 +1,16 @@
 ---
 /**
  * Footer — Global footer on all pages
- * Logo, nav links, legal links, copyright, email signup
- * Summit Navy or dark background
+ * Logo, nav links (split into 2 columns), legal links, copyright, email signup
+ * Summit Navy background — 4-column desktop layout
  */
 const currentYear = new Date().getFullYear();
-
-const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'Services', href: '/services' },
-  { label: 'Summit Signals', href: '/summit-signals' },
-  { label: 'About', href: '/about' },
-  { label: 'Contact', href: '/contact' },
-];
 ---
 
 <footer class="bg-summit-navy text-white/80 border-t border-white/10">
   <div class="mx-auto max-w-7xl px-6 pt-16 md:pt-20 pb-12 md:pb-16">
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-12">
-      <!-- Column 1: Logo + Description -->
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 md:gap-8">
+      <!-- Column 1: Logo + Tagline -->
       <div>
         <a href="/" aria-label="Signal to Summit — Home">
           <img
@@ -34,29 +26,39 @@ const navLinks = [
         </p>
       </div>
 
-      <!-- Column 2: Navigation -->
+      <!-- Column 2: Nav Left -->
       <div>
         <h3 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Navigation</h3>
         <ul class="space-y-2">
-          {navLinks.map((link) => (
-            <li>
-              <a
-                href={link.href}
-                class="text-sm text-white/60 hover:text-white transition-colors"
-              >
-                {link.label}
-              </a>
-            </li>
-          ))}
           <li>
-            <a href="/contact" class="text-sm text-signal-blue hover:text-white transition-colors">
-              Let's Talk
-            </a>
+            <a href="/" class="text-sm text-white/60 hover:text-white transition-colors">Home</a>
+          </li>
+          <li>
+            <a href="/services" class="text-sm text-white/60 hover:text-white transition-colors">Services</a>
+          </li>
+          <li>
+            <a href="/summit-signals" class="text-sm text-white/60 hover:text-white transition-colors">Summit Signals</a>
           </li>
         </ul>
       </div>
 
-      <!-- Column 3: Email Signup -->
+      <!-- Column 3: Nav Right -->
+      <div>
+        <h3 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">&nbsp;</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="/about" class="text-sm text-white/60 hover:text-white transition-colors">About</a>
+          </li>
+          <li>
+            <a href="/contact" class="text-sm text-white/60 hover:text-white transition-colors">Contact</a>
+          </li>
+          <li>
+            <a href="/contact" class="text-sm text-signal-blue hover:text-white transition-colors">Let's Talk</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Column 4: Email Signup -->
       <div>
         <h3 class="text-white font-semibold text-sm mb-4 tracking-wide uppercase">Stay informed</h3>
         <p class="text-sm text-white/60 mb-4">Get notified when new analysis drops.</p>
