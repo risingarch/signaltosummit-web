@@ -143,8 +143,10 @@
     line-height: var(--line-height-heading);
     letter-spacing: -0.015em;
     color: var(--color-summit-navy);
-    margin-top: 3.5rem;
+    margin-top: 5rem;
     margin-bottom: 1.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid color-mix(in srgb, var(--color-summit-navy) 10%, transparent);
   }
 
   .prose-thesis h3 {
@@ -170,7 +172,7 @@
 
   .prose-thesis em {
     font-style: italic;
-    color: color-mix(in srgb, var(--color-summit-navy) 70%, transparent);
+    color: inherit;
   }
 
   .prose-thesis hr {
@@ -246,8 +248,231 @@
     font-style: italic;
   }
 
+  /* ── Pull Quote ── */
+  .prose-thesis .pull-quote {
+    border-left: 4px solid color-mix(in srgb, var(--color-signal-blue) 65%, transparent);
+    padding: 0.25rem 0 0.25rem 1.5rem;
+    margin: 3rem 0;
+    font-size: calc(var(--font-size-thesis) * 1.3);
+    line-height: 1.5;
+    color: var(--color-summit-navy);
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .prose-thesis .pull-quote p {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    font-weight: inherit;
+    margin-bottom: 0;
+  }
+
+  /* Thesis statement pull quote — centered, larger */
+  .prose-thesis .pull-quote-thesis {
+    border-left: none;
+    text-align: center;
+    padding: 0;
+    margin: 3.5rem 0;
+    font-size: calc(var(--font-size-thesis) * 1.45);
+    line-height: 1.45;
+    color: var(--color-summit-navy);
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  .prose-thesis .pull-quote-thesis p {
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    font-weight: inherit;
+    margin-bottom: 0;
+  }
+
+  /* ── Orientation Block (Executive Summary TOC) ── */
+  .prose-thesis .orientation-block {
+    background: var(--color-soft-gray);
+    border-radius: var(--radius-card);
+    padding: 2rem 2.5rem;
+    margin: 2.5rem 0 3rem;
+  }
+
+  .prose-thesis .orientation-block ol {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    counter-reset: orientation;
+  }
+
+  .prose-thesis .orientation-block li {
+    counter-increment: orientation;
+    display: flex;
+    gap: 1rem;
+    align-items: baseline;
+    padding: 1.25rem 0;
+    border-bottom: 1px solid color-mix(in srgb, var(--color-summit-navy) 8%, transparent);
+    margin-bottom: 0;
+    font-size: var(--font-size-thesis);
+  }
+
+  .prose-thesis .orientation-block li:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .prose-thesis .orientation-block li:first-child {
+    padding-top: 0;
+  }
+
+  .prose-thesis .orientation-block li::before {
+    content: counter(orientation);
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: var(--color-signal-blue-dark);
+    border: 2px solid var(--color-signal-blue);
+    border-radius: 50%;
+  }
+
+  .prose-thesis .orientation-block a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .prose-thesis .orientation-block a:hover {
+    color: var(--color-signal-blue-dark);
+  }
+
+  .prose-thesis .orientation-block .orient-label {
+    display: block;
+    font-weight: 700;
+    font-size: calc(var(--font-size-thesis) * 1.05);
+    color: var(--color-summit-navy);
+    margin-bottom: 0.2rem;
+  }
+
+  .prose-thesis .orientation-block .orient-context {
+    display: block;
+    font-weight: 400;
+    font-size: var(--font-size-small);
+    color: color-mix(in srgb, var(--color-summit-navy) 65%, transparent);
+    line-height: 1.5;
+  }
+
+  /* ── Stat Block ── */
+  .prose-thesis .stat-block {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2.5rem 2rem;
+    margin: 3.5rem 0;
+    background: var(--color-soft-gray);
+    border-top: 2px solid color-mix(in srgb, var(--color-signal-blue) 25%, transparent);
+    border-bottom: 2px solid color-mix(in srgb, var(--color-signal-blue) 25%, transparent);
+    border-radius: var(--radius-card);
+  }
+
+  .prose-thesis .stat-block .stat-item {
+    text-align: center;
+    flex: 1;
+    max-width: 200px;
+  }
+
+  .prose-thesis .stat-block .stat-value {
+    display: block;
+    font-size: calc(var(--font-size-thesis) * 2);
+    font-weight: 700;
+    color: var(--color-summit-navy);
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.4rem;
+  }
+
+  .prose-thesis .stat-block .stat-label {
+    display: block;
+    font-size: var(--font-size-small);
+    color: color-mix(in srgb, var(--color-summit-navy) 70%, transparent);
+    line-height: 1.4;
+    font-weight: 400;
+  }
+
+  /* ── Data Callout ── */
+  .prose-thesis .data-callout {
+    float: right;
+    width: 45%;
+    max-width: 220px;
+    text-align: center;
+    padding: 1.5rem 1.25rem;
+    margin: 0.5rem 0 1.5rem 2rem;
+    background: var(--color-soft-gray);
+    border-radius: var(--radius-card);
+  }
+
+  .prose-thesis .data-callout .callout-value {
+    display: block;
+    font-size: calc(var(--font-size-thesis) * 2.75);
+    font-weight: 700;
+    color: var(--color-summit-navy);
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+
+  .prose-thesis .data-callout .callout-label {
+    display: block;
+    font-size: var(--font-size-small);
+    color: color-mix(in srgb, var(--color-summit-navy) 70%, transparent);
+    line-height: 1.4;
+    margin-top: 0.5rem;
+  }
+
+  /* ── Responsive adjustments for visual insertions ── */
   @media (max-width: 768px) {
-    .prose-thesis h2 { margin-top: 2.5rem; }
+    .prose-thesis h2 {
+      margin-top: 3.5rem;
+      padding-top: 1.5rem;
+    }
     .prose-thesis h3 { margin-top: 2rem; }
+
+    .prose-thesis .pull-quote {
+      margin: 2rem 0;
+      font-size: calc(1rem * 1.2);
+    }
+
+    .prose-thesis .pull-quote-thesis {
+      margin: 2.5rem 0;
+      font-size: calc(1rem * 1.3);
+    }
+
+    .prose-thesis .orientation-block {
+      padding: 1.5rem;
+    }
+
+    .prose-thesis .orientation-block li {
+      font-size: 1rem;
+    }
+
+    .prose-thesis .stat-block {
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2rem 1.5rem;
+      align-items: center;
+    }
+
+    .prose-thesis .stat-block .stat-item {
+      max-width: none;
+    }
+
+    .prose-thesis .data-callout {
+      float: none;
+      width: 100%;
+      max-width: none;
+      margin: 2rem 0;
+    }
   }
 }

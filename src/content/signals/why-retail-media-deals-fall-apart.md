@@ -26,7 +26,13 @@ Most people think the deal dies because of missing features or budget constraint
 
 Deals don't fall apart because of your product. They fall apart because platform providers consistently misread what's actually happening inside these organizations.
 
-What follows breaks down three things: what platform providers consistently underestimate, why retail media is harder than it looks, and how winning organizations close that gap.
+<div class="orientation-block">
+<ol>
+<li><a href="#what-platform-providers-consistently-underestimate"><span class="orient-label">What Platform Providers Underestimate</span><span class="orient-context">Three misreads that kill deals late in the cycle</span></a></li>
+<li><a href="#the-retail-media-reality-platform-providers-underestimate"><span class="orient-label">The Retail Media Reality</span><span class="orient-context">Three simultaneous pressures every RMN leader navigates</span></a></li>
+<li><a href="#how-winning-organizations-close-the-gap"><span class="orient-label">How Winning Organizations Close the Gap</span><span class="orient-context">The operating system that separates durable growth from temporary momentum</span></a></li>
+</ol>
+</div>
 
 ---
 
@@ -50,6 +56,10 @@ Is it time and throughput — cycle time, turnaround, SLA performance? Is it pro
 
 If you can't point to one of these and show measurable improvement fast, you're asking a team that's already underwater to learn another tool. And they won't.
 
+<div class="pull-quote">
+<p>The real question isn't "does it have features?" The real question is: what constraint gets measurably better in the first 30 to 90 days?</p>
+</div>
+
 ### Misread #2: "The Retail Media Lead Is Aligned — This Deal Will Move"
 
 **Reality: retail media leaders don't buy alone. They operate inside a coalition with veto power.**
@@ -61,6 +71,10 @@ Even with strong initial intent, the deal is under scrutiny. Momentum dies. The 
 If you're selling to retail media, you have to sell to the coalition — not just the champion. Map the stakeholders. Address their individual needs. Build the case in language that works for merchants, for IT, for finance, for legal. Not just a product demo — an alignment strategy.
 
 The real gating challenge isn't product capability. It's internal alignment. And if you don't design for that, you get trapped in "we'll revisit this next quarter." Forever.
+
+<div class="pull-quote">
+<p>The real gating challenge isn't product capability. It's internal alignment.</p>
+</div>
 
 ### Misread #3: "If They're Not Moving Fast, It's a Priority Problem"
 
@@ -79,6 +93,12 @@ If your platform requires constant attention, re-education, or exception handlin
 Deals don't fall apart because of missing features. They fall apart because platform providers underestimate the delivery friction, the coalition dynamics, and the capacity constraints inside retail media organizations.
 
 Some retail media networks are figuring this out. But first, you need to understand the reality these leaders are navigating every day — because it's more intense than most platform providers realize.
+
+<div class="stat-block">
+<div class="stat-item"><span class="stat-value">15 years</span><span class="stat-label">in retail</span></div>
+<div class="stat-item"><span class="stat-value">7 years</span><span class="stat-label">building measurement infrastructure at a top-10 RMN</span></div>
+<div class="stat-item"><span class="stat-value">3 patterns</span><span class="stat-label">that kill deals late in the cycle</span></div>
+</div>
 
 ---
 
@@ -106,6 +126,10 @@ Externally, advertisers and agencies are insisting retail media prove its value.
 
 Retail media is entering its accountability era. As budgets consolidate and scrutiny intensifies, retail media networks are being asked to prove their value the same way the rest of digital media does. If retail media's measurement can't defend itself in a holding company QBR, that budget moves to a network that can.
 
+<div class="pull-quote">
+<p>Retail media is entering its accountability era.</p>
+</div>
+
 Internally, it's just as brutal. CFOs and boards are asking: is retail media expanding the pie, or are we just renaming trade dollars as media revenue? Once the upfront tech investment is made, retail media can deliver profit margins north of 50% for retailers — so finance has every incentive to scrutinize whether those margins are real or just reclassified. Is this improving profit quality, or are we cannibalizing merchant economics?
 
 If retail media looks like reclassified trade, internal trust collapses. Finance pulls support. Merchants start fighting for attribution credit.
@@ -115,6 +139,8 @@ Most networks face a common problem: their measurement systems aren't built for 
 ### Growth Pressure: No More Excuses
 
 Retail media is on the scoreboard now. Five years ago, it was a pilot — an experiment. Today, boards and CEOs have made commitments: growth targets with timelines attached. Retail media leaders aren't managing innovation projects anymore — they're accountable for material revenue contribution. Platform providers are no longer selling into experimental budgets — you're competing for production dollars where ROI scrutiny is brutal.
+
+<div class="data-callout"><span class="callout-value">~88%</span><span class="callout-label">of U.S. retail media revenue — Amazon and Walmart combined</span></div>
 
 This is happening during an arms race for advertiser dollars. Large brands are consolidating their retail media investments — choosing their top three or four networks and concentrating budget for maximum impact. Holding companies are following suit, consolidating spend across their entire client roster. Amazon and Walmart account for roughly 88% of U.S. retail media revenue — and they're projected to capture about 89% of incremental growth in the near term. If you're not perceived as a winner, you lose access to talent, partnerships, and budget renewals.
 
@@ -172,7 +198,9 @@ A lot of leaders entered retail media with big expectations. The winners are the
 
 You're building a media company inside a retail company. And the default retail operating system — processes, priorities, tech, decision rights — was never designed for speed, experimentation, or advertiser-grade measurement.
 
-This isn't a channel problem. It's an operating model problem.
+<div class="pull-quote-thesis">
+<p>This isn't a channel problem. It's an operating model problem.</p>
+</div>
 
 ---
 
