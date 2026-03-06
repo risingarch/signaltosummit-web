@@ -36,22 +36,18 @@ const homeSchema = {
   schema={homeSchema}
 >
   {/* ── Section 1.1: HERO ── */}
-  <section class="relative flex flex-col overflow-hidden">
-    {/* Hero image with white border treatment matching original site */}
-    <div class="bg-white p-4 md:p-6">
-      <div class="relative w-full overflow-hidden max-h-[55vh] md:max-h-[60vh]">
-        <img
-          src="/images/hero-mountain-original.jpg"
-          alt="Mountain range summit — Signal to Summit"
-          class="w-full h-full object-cover object-center"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
-    </div>
-    {/* Hero text below image */}
-    <div class="bg-summit-navy py-16 md:py-20 lg:py-24">
-      <div class="mx-auto w-full max-w-[45rem] px-6">
+  <div class="bg-white p-4 md:p-6">
+    <section class="relative h-[60vh] md:h-[65vh] flex items-center overflow-hidden">
+      {/* Background image with dark overlay */}
+      <img
+        src="/images/hero-mountain-original.jpg"
+        alt=""
+        class="absolute inset-0 w-full h-full object-cover object-top"
+        loading="eager"
+        decoding="async"
+      />
+      <div class="absolute inset-0 bg-summit-navy/70"></div>
+      <div class="relative mx-auto w-full max-w-[45rem] px-6">
         <h1 class="text-white text-[1.75rem] md:text-[2rem] font-bold leading-[1.3] tracking-[-0.02em] mb-6">
           Your product isn't the problem. The way it meets the retailer's operating reality is.
         </h1>
@@ -60,8 +56,8 @@ const homeSchema = {
         </p>
         <Button href="/contact">Let's Talk</Button>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 
   {/* ── Section 1.2: PROBLEM RECOGNITION ── */}
   <Section>
