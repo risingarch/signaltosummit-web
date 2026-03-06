@@ -26,3 +26,4 @@ pnpm-debug.log*
 # build screenshots
 temporary-screenshots/
 .vercel
+test-results/
