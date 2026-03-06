@@ -121,3 +121,90 @@
     top: 0;
   }
 }
+
+/* ── Thesis / Long-form Article Prose ── */
+@layer components {
+  .prose-thesis {
+    max-width: var(--content-column-width);
+  }
+
+  .prose-thesis h1 {
+    font-size: var(--font-size-h1);
+    font-weight: 700;
+    line-height: var(--line-height-heading);
+    letter-spacing: -0.02em;
+    color: var(--color-summit-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-thesis h2 {
+    font-size: var(--font-size-h2);
+    font-weight: 700;
+    line-height: var(--line-height-heading);
+    letter-spacing: -0.015em;
+    color: var(--color-summit-navy);
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .prose-thesis h3 {
+    font-size: var(--font-size-h3);
+    font-weight: 600;
+    line-height: var(--line-height-subheading);
+    color: var(--color-summit-navy);
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .prose-thesis p {
+    font-size: var(--font-size-thesis);
+    line-height: var(--line-height-thesis);
+    color: color-mix(in srgb, var(--color-summit-navy) 90%, transparent);
+    margin-bottom: var(--spacing-paragraph);
+  }
+
+  .prose-thesis strong {
+    font-weight: 700;
+    color: var(--color-summit-navy);
+  }
+
+  .prose-thesis em {
+    font-style: italic;
+    color: color-mix(in srgb, var(--color-summit-navy) 70%, transparent);
+  }
+
+  .prose-thesis hr {
+    border: none;
+    margin: 3rem 0;
+  }
+
+  .prose-thesis a {
+    color: var(--color-signal-blue-dark);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .prose-thesis a:hover {
+    color: var(--color-signal-blue);
+  }
+
+  /*
+   * When rendered inside a page template that already has the H1 and byline
+   * in the header section, hide the duplicates from the markdown content.
+   * The markdown source stays unchanged — template handles the display.
+   */
+  .prose-thesis > h1:first-child {
+    display: none;
+  }
+  .prose-thesis > h1:first-child + p {
+    display: none;
+  }
+  .prose-thesis > h1:first-child + p + hr {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .prose-thesis h2 { margin-top: 2.5rem; }
+    .prose-thesis h3 { margin-top: 2rem; }
+  }
+}

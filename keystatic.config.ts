@@ -57,6 +57,11 @@ export default config({
           directory: 'public/images/signals',
           publicPath: '/images/signals/',
         }),
+        transcript: fields.text({
+          label: 'Transcript',
+          description: 'Video transcript text (collapsible on page)',
+          multiline: true,
+        }),
         draft: fields.checkbox({
           label: 'Draft',
           description: 'Draft content is not published',

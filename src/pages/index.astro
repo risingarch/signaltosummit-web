@@ -36,27 +36,32 @@ const homeSchema = {
   schema={homeSchema}
 >
   {/* ── Section 1.1: HERO ── */}
-  <section class="relative min-h-[85vh] md:min-h-[80vh] flex items-center py-20 md:py-28 lg:py-32 overflow-hidden">
-    {/* Background image with dark overlay */}
-    <picture class="absolute inset-0 w-full h-full">
-      <source srcset="/images/hero-mountain.webp" type="image/webp" />
-      <img
-        src="/images/hero-mountain.jpg"
-        alt=""
-        class="absolute inset-0 w-full h-full object-cover object-top"
-        loading="eager"
-        decoding="async"
-      />
-    </picture>
-    <div class="absolute inset-0 bg-summit-navy/80"></div>
-    <div class="relative mx-auto w-full max-w-[45rem] px-6">
-      <h1 class="text-white text-[1.75rem] md:text-[2rem] font-bold leading-[1.3] tracking-[-0.02em] mb-6">
-        Your product isn't the problem. The way it meets the retailer's operating reality is.
-      </h1>
-      <p class="text-white/80 text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
-        Strategic advisory for platform leaders whose retail media deals keep stalling — not because the technology fails, but because the approach doesn't account for how retailers actually operate.
-      </p>
-      <Button href="/contact">Let's Talk</Button>
+  <section class="relative flex flex-col overflow-hidden">
+    {/* Hero image with white border treatment matching original site */}
+    <div class="bg-white p-4 md:p-6">
+      <div class="relative w-full overflow-hidden">
+        <img
+          src="/images/hero-mountain.jpg"
+          alt="Mountain range summit — Signal to Summit"
+          class="w-full h-auto"
+          loading="eager"
+          decoding="async"
+          width="2304"
+          height="1792"
+        />
+      </div>
+    </div>
+    {/* Hero text below image */}
+    <div class="bg-summit-navy py-16 md:py-20 lg:py-24">
+      <div class="mx-auto w-full max-w-[45rem] px-6">
+        <h1 class="text-white text-[1.75rem] md:text-[2rem] font-bold leading-[1.3] tracking-[-0.02em] mb-6">
+          Your product isn't the problem. The way it meets the retailer's operating reality is.
+        </h1>
+        <p class="text-white/80 text-base md:text-lg leading-relaxed mb-10 max-w-2xl">
+          Strategic advisory for platform leaders whose retail media deals keep stalling — not because the technology fails, but because the approach doesn't account for how retailers actually operate.
+        </p>
+        <Button href="/contact">Let's Talk</Button>
+      </div>
     </div>
   </section>
 
@@ -69,7 +74,7 @@ const homeSchema = {
       <div>
         <p class="text-signal-blue-dark text-base font-bold tracking-wide uppercase mb-4">Coalition Dynamics</p>
         <p class="text-summit-navy/90 leading-relaxed">
-          The deal looks aligned. But the champion who said yes doesn't control implementation priority, data access, or budget. Deals stall from coalition misalignment — not product gaps.
+          The RMN lead is aligned. The demo went well. But the deal stalls anyway — because the champion who said yes isn't the person who controls implementation priority, data access, or budget. Deals don't die from product gaps. They die from coalition misalignment your team never mapped.
         </p>
       </div>
 
@@ -77,7 +82,7 @@ const homeSchema = {
       <div>
         <p class="text-signal-blue-dark text-base font-bold tracking-wide uppercase mb-4">Delivery Scaling</p>
         <p class="text-summit-navy/90 leading-relaxed">
-          Your first implementations required heroes. Now every new customer requires the same heroics. Revenue grows linearly with headcount. That's a ceiling.
+          Your first implementations required heroes. Now every new customer requires the same heroics. Revenue grows linearly with headcount. That's not a scaling challenge — it's a ceiling.
         </p>
       </div>
 
@@ -85,7 +90,7 @@ const homeSchema = {
       <div>
         <p class="text-signal-blue-dark text-base font-bold tracking-wide uppercase mb-4">Absorption Capacity</p>
         <p class="text-summit-navy/90 leading-relaxed">
-          The retailer says they're interested but nothing moves. The organization is operating under constraints that get consistently underestimated — bandwidth, data readiness, process maturity. The limiting factor isn't what they agreed to buy — it's what the approach assumed they could absorb without support.
+          The retailer says they're interested but nothing moves. It's not a priority problem. The organization is operating under constraints your team consistently underestimates — bandwidth, data readiness, process maturity. The limiting factor isn't what they agreed to buy — it's what your approach assumed they could absorb without support.
         </p>
       </div>
     </div>
@@ -95,17 +100,8 @@ const homeSchema = {
   <Section background="soft-gray">
     <h2 class="text-summit-navy mb-8">Diagnosed from the inside, not studied from the outside.</h2>
 
-    <div class="space-y-6">
-      <p class="text-summit-navy/90 leading-relaxed">
-        Most advisory firms study retail media from earnings calls and industry events. Signal to Summit was built by someone who spent ten years inside one of the largest retailers in the U.S., with seven of those years building retail media measurement infrastructure — watching platform partnerships succeed and fail from the operator's chair.
-      </p>
-      <p class="text-summit-navy/90 leading-relaxed">
-        The patterns that kill deals are invisible from the outside. They're obvious from the inside.
-      </p>
-    </div>
-
-    <p class="text-summit-navy/80 text-base mt-8 leading-relaxed font-medium">
-      Jaiah Kamara — 10 years inside a top-10 retailer. 7 of those years building measurement infrastructure for retail media.
+    <p class="text-summit-navy/90 leading-relaxed">
+      Seven years inside a top-10 U.S. retail media network. The patterns that stall platform deals — coalition misalignment, delivery scaling, absorption capacity — were diagnosed from the operator's chair, not a conference stage.
     </p>
   </Section>
 
@@ -128,7 +124,7 @@ const homeSchema = {
       ></iframe>
     </div>
 
-    <a href="/thesis" class="text-signal-blue-dark hover:text-signal-blue font-medium transition-colors">
+    <a href="/summit-signals/why-retail-media-deals-fall-apart" class="text-signal-blue-dark hover:text-signal-blue font-medium transition-colors">
       Read the full thesis &rarr;
     </a>
   </Section>

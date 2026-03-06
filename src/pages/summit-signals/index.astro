@@ -75,7 +75,7 @@ const pillars = [
   {/* ── Section 5.3: CONTENT CARDS ── */}
   <Section>
     {signals.length > 0 ? (
-      <div class="grid grid-cols-1 gap-8" id="content-grid">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="content-grid">
         {signals.map((signal) => (
           <a
             href={`/summit-signals/${signal.id}`}

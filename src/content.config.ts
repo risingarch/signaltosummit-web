@@ -19,6 +19,7 @@ const signals = defineCollection({
     videoTitle: z.string().optional(),
     videoDuration: z.string().optional(),
     thumbnail: z.string().optional(),
+    transcript: z.string().optional(),
     draft: z.boolean().default(false),
     faqItems: z
       .array(

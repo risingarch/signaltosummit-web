@@ -20,37 +20,82 @@ const pillarLabels: Record<string, string> = {
   'buyer-education': 'Buyer Education',
 };
 
-const articleSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: signal.data.title,
-  description: signal.data.description,
-  author: {
+const schemas: Record<string, unknown>[] = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: signal.data.title,
+    description: signal.data.description,
+    author: {
+      '@type': 'Person',
+      name: signal.data.author,
+      jobTitle: 'Founder, Signal to Summit',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Signal to Summit',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://signaltosummit.com/images/logo-horizontal.png',
+      },
+    },
+    datePublished: new Date(signal.data.publishDate).toISOString(),
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `https://signaltosummit.com/summit-signals/${signal.id}`,
+    },
+    articleSection: pillarLabels[signal.data.pillar] || signal.data.pillar,
+  },
+  {
+    '@context': 'https://schema.org',
     '@type': 'Person',
     name: signal.data.author,
-  },
-  publisher: {
-    '@type': 'Organization',
-    name: 'Signal to Summit',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://signaltosummit.com/images/logo-horizontal.png',
+    jobTitle: 'Founder',
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Signal to Summit',
     },
+    url: 'https://signaltosummit.com/about',
   },
-  datePublished: new Date(signal.data.publishDate).toISOString(),
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': `https://signaltosummit.com/summit-signals/${signal.id}`,
-  },
-  articleSection: pillarLabels[signal.data.pillar] || signal.data.pillar,
-};
+];
+
+if (signal.data.videoUrl) {
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: signal.data.videoTitle || signal.data.title,
+    description: signal.data.description,
+    thumbnailUrl: `https://img.youtube.com/vi/${signal.data.videoUrl.split('/').pop()}/maxresdefault.jpg`,
+    uploadDate: new Date(signal.data.publishDate).toISOString(),
+    embedUrl: signal.data.videoUrl,
+    author: {
+      '@type': 'Person',
+      name: signal.data.author,
+    },
+  });
+}
+
+if (signal.data.faqItems && signal.data.faqItems.length > 0) {
+  schemas.push({
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: signal.data.faqItems.map((item: { question: string; answer: string }) => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer,
+      },
+    })),
+  });
+}
 ---
 
 <PageLayout
   title={signal.data.title}
   description={signal.data.description}
   pageType="article"
-  schema={articleSchema}
+  schema={schemas}
 >
   <article>
     {/* Header */}
@@ -64,7 +109,7 @@ const articleSchema = {
           {signal.data.description}
         </p>
         <p class="text-summit-navy/50 text-sm">
-          By {signal.data.author} &middot;{' '}
+          By {signal.data.author}, Founder — Signal to Summit &middot;{' '}
           {new Date(signal.data.publishDate).toLocaleDateString('en-US', {
             year: 'numeric',
             month: 'long',
@@ -76,9 +121,9 @@ const articleSchema = {
 
     {/* Video (if present) */}
     {signal.data.videoUrl && (
-      <section class="pb-16 md:pb-24">
+      <section class="pb-12 md:pb-16">
         <div class="mx-auto w-full max-w-[45rem] px-6">
-          <div class="aspect-video rounded-lg overflow-hidden">
+          <div class="aspect-video rounded-lg overflow-hidden mb-4">
             <iframe
               src={`${signal.data.videoUrl}?rel=0&modestbranding=1`}
               title={signal.data.videoTitle || signal.data.title}
@@ -88,19 +133,61 @@ const articleSchema = {
               allowfullscreen
             ></iframe>
           </div>
+          {signal.data.videoDuration && (
+            <p class="text-summit-navy/60 text-sm">
+              Watch the full thesis ({signal.data.videoDuration}) or read the written version below.
+            </p>
+          )}
+        </div>
+      </section>
+    )}
+
+    {/* Collapsible Transcript */}
+    {signal.data.transcript && (
+      <section class="pb-8">
+        <div class="mx-auto w-full max-w-[45rem] px-6">
+          <details class="border border-soft-gray rounded-lg">
+            <summary class="px-6 py-4 cursor-pointer text-summit-navy/70 text-sm font-medium hover:text-summit-navy transition-colors">
+              View video transcript
+            </summary>
+            <div class="px-6 pb-6 pt-2 text-summit-navy/70 text-sm leading-relaxed whitespace-pre-line border-t border-soft-gray">
+              {signal.data.transcript}
+            </div>
+          </details>
         </div>
       </section>
     )}
 
     {/* Written content */}
     <section class="pb-16 md:pb-24">
-      <div class="mx-auto w-full max-w-[45rem] px-6 prose prose-lg prose-summit-navy">
+      <div class="mx-auto w-full max-w-[45rem] px-6 prose-thesis">
         <Content />
       </div>
     </section>
 
+    {/* FAQ Section */}
+    {signal.data.faqItems && signal.data.faqItems.length > 0 && (
+      <section class="bg-soft-gray py-12 md:py-16">
+        <div class="mx-auto w-full max-w-[45rem] px-6">
+          <h2 class="text-summit-navy mb-8">Frequently Asked Questions</h2>
+          <div class="space-y-6">
+            {signal.data.faqItems.map((item: { question: string; answer: string }) => (
+              <details class="bg-white rounded-lg border border-summit-navy/10">
+                <summary class="px-6 py-4 cursor-pointer text-summit-navy font-medium text-base hover:text-signal-blue-dark transition-colors">
+                  {item.question}
+                </summary>
+                <div class="px-6 pb-5 text-summit-navy/80 leading-relaxed">
+                  {item.answer}
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+    )}
+
     {/* Email signup */}
-    <section class="bg-soft-gray py-12">
+    <section class="bg-soft-gray py-12 border-t border-summit-navy/5">
       <div class="mx-auto w-full max-w-[45rem] px-6 text-center">
         <p class="text-summit-navy/70 text-sm mb-4">Get notified when new analysis drops.</p>
         <form class="flex gap-3 max-w-md mx-auto">
