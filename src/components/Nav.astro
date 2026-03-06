@@ -26,7 +26,7 @@ function isActive(href: string): boolean {
       <img
         src="/images/logo-horizontal.png"
         alt="Signal to Summit"
-        class="h-9 md:h-10 w-auto"
+        class="h-10 md:h-12 w-auto"
         width="200"
         height="40"
       />
@@ -38,10 +38,10 @@ function isActive(href: string): boolean {
         <a
           href={link.href}
           class:list={[
-            'text-[0.9375rem] font-semibold transition-colors',
+            'text-[0.9375rem] font-bold transition-colors',
             isActive(link.href)
               ? 'text-summit-navy'
-              : 'text-summit-navy/70 hover:text-summit-navy',
+              : 'text-summit-navy/90 hover:text-summit-navy',
           ]}
           aria-current={isActive(link.href) ? 'page' : undefined}
         >
