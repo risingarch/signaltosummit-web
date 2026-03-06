@@ -1,6 +1,8 @@
 ---
 import PageLayout from '../../layouts/PageLayout.astro';
-import BottomCTA from '../../components/BottomCTA.astro';
+import ShareButtons from '../../components/ShareButtons.astro';
+import MidReadSubscribe from '../../components/MidReadSubscribe.astro';
+import KeepReading from '../../components/KeepReading.astro';
 import { getCollection, render } from 'astro:content';
 
 export async function getStaticPaths() {
@@ -14,18 +16,42 @@ export async function getStaticPaths() {
 const { signal } = Astro.props;
 const { Content } = await render(signal);
 
-const pillarLabels: Record<string, string> = {
-  thesis: 'Thesis',
-  'pattern-recognition': 'Pattern Recognition',
-  'buyer-education': 'Buyer Education',
-};
+// Get all signals for Keep Reading section
+const allSignals = await getCollection('signals', ({ data }) => !data.draft);
 
+// Estimate read time from content body
+const wordCount = signal.body ? signal.body.split(/\s+/).length : 0;
+const readMinutes = Math.max(3, Math.ceil(wordCount / 230));
+const readTime = `${readMinutes} min read`;
+
+// Build canonical URL
+const canonicalUrl = `https://signaltosummit.com/summit-signals/${signal.id}`;
+
+// Build OG image — thumbnail or YouTube thumb or default
+const ogImage = signal.data.thumbnail
+  || (signal.data.videoUrl
+    ? `https://img.youtube.com/vi/${signal.data.videoUrl.split('/').pop()}/maxresdefault.jpg`
+    : '/images/og-default.png');
+
+// Executive summary for meta description (first 2 sentences)
+const execSummaryMeta = signal.data.executiveSummary
+  ? signal.data.executiveSummary.split('. ').slice(0, 2).join('. ') + '.'
+  : signal.data.description;
+
+// Formatted date
+const publishDate = new Date(signal.data.publishDate).toLocaleDateString('en-US', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+// Schema.org structured data
 const schemas: Record<string, unknown>[] = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: signal.data.title,
-    description: signal.data.description,
+    description: execSummaryMeta,
     author: {
       '@type': 'Person',
       name: signal.data.author,
@@ -40,22 +66,11 @@ const schemas: Record<string, unknown>[] = [
       },
     },
     datePublished: new Date(signal.data.publishDate).toISOString(),
+    image: ogImage,
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://signaltosummit.com/summit-signals/${signal.id}`,
+      '@id': canonicalUrl,
     },
-    articleSection: pillarLabels[signal.data.pillar] || signal.data.pillar,
-  },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'Person',
-    name: signal.data.author,
-    jobTitle: 'Founder',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Signal to Summit',
-    },
-    url: 'https://signaltosummit.com/about',
   },
 ];
 
@@ -93,35 +108,68 @@ if (signal.data.faqItems && signal.data.faqItems.length > 0) {
 
 <PageLayout
   title={signal.data.title}
-  description={signal.data.description}
+  description={execSummaryMeta}
+  ogImage={ogImage}
+  canonicalURL={canonicalUrl}
   pageType="article"
   schema={schemas}
 >
   <article>
-    {/* Header */}
-    <section class="py-20 md:py-28">
+    {/* -- Breadcrumb -- */}
+    <div class="mx-auto w-full max-w-[45rem] px-6 pt-8">
+      <nav class="text-xs text-summit-navy/50" aria-label="Breadcrumb">
+        <ol class="flex items-center gap-1.5">
+          <li><a href="/" class="hover:text-signal-blue-dark transition-colors">Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li><a href="/summit-signals" class="hover:text-signal-blue-dark transition-colors">Summit Signals</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="text-summit-navy/70 truncate max-w-[200px]" aria-current="page">{signal.data.title}</li>
+        </ol>
+      </nav>
+    </div>
+
+    {/* -- Article Header -- */}
+    <section class="pt-8 pb-8 md:pt-12 md:pb-12">
       <div class="mx-auto w-full max-w-[45rem] px-6">
-        <span class="inline-block text-xs font-medium text-signal-blue-dark mb-4 uppercase tracking-wider">
-          {pillarLabels[signal.data.pillar] || signal.data.pillar}
-        </span>
+        {/* Title (H1) */}
         <h1 class="text-summit-navy mb-4">{signal.data.title}</h1>
-        <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed mb-4">
-          {signal.data.description}
+
+        {/* Subtitle/teaser */}
+        <p class="text-summit-navy/70 text-lg leading-relaxed mb-4">
+          {signal.data.teaser || signal.data.description}
         </p>
-        <p class="text-summit-navy/50 text-sm">
-          By {signal.data.author}, Founder — Signal to Summit &middot;{' '}
-          {new Date(signal.data.publishDate).toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-          })}
+
+        {/* Meta line */}
+        <p class="text-summit-navy/50 text-sm mb-6">
+          {signal.data.author} &middot; {publishDate} &middot; {readTime}
         </p>
+
+        {/* Share buttons — top placement */}
+        <ShareButtons
+          title={signal.data.title}
+          url={canonicalUrl}
+          description={execSummaryMeta}
+        />
       </div>
     </section>
 
-    {/* Video (if present) */}
+    {/* -- Executive Summary -- */}
+    {signal.data.executiveSummary && (
+      <section class="pb-8 md:pb-12">
+        <div class="mx-auto w-full max-w-[45rem] px-6">
+          <div class="border-l-[3px] border-signal-blue/30 bg-soft-gray/60 rounded-r-lg pl-6 pr-6 py-5">
+            <p class="text-summit-navy/90 text-xs font-semibold uppercase tracking-wider mb-3">Executive Summary</p>
+            <p class="text-summit-navy/80 text-base leading-relaxed">
+              {signal.data.executiveSummary}
+            </p>
+          </div>
+        </div>
+      </section>
+    )}
+
+    {/* -- Video (if present) -- */}
     {signal.data.videoUrl && (
-      <section class="pb-12 md:pb-16">
+      <section class="pb-8 md:pb-12">
         <div class="mx-auto w-full max-w-[45rem] px-6">
           <div class="aspect-video rounded-lg overflow-hidden mb-4">
             <iframe
@@ -142,7 +190,7 @@ if (signal.data.faqItems && signal.data.faqItems.length > 0) {
       </section>
     )}
 
-    {/* Collapsible Transcript */}
+    {/* -- Collapsible Transcript -- */}
     {signal.data.transcript && (
       <section class="pb-8">
         <div class="mx-auto w-full max-w-[45rem] px-6">
@@ -158,14 +206,17 @@ if (signal.data.faqItems && signal.data.faqItems.length > 0) {
       </section>
     )}
 
-    {/* Written content */}
-    <section class="pb-16 md:pb-24">
+    {/* -- Article Body -- */}
+    <section class="pb-12 md:pb-16">
       <div class="mx-auto w-full max-w-[45rem] px-6 prose-thesis">
         <Content />
       </div>
     </section>
 
-    {/* FAQ Section */}
+    {/* -- Mid-Read Subscribe Prompt (positioned via scroll JS) -- */}
+    <MidReadSubscribe />
+
+    {/* -- FAQ Section -- */}
     {signal.data.faqItems && signal.data.faqItems.length > 0 && (
       <section class="bg-soft-gray py-12 md:py-16">
         <div class="mx-auto w-full max-w-[45rem] px-6">
@@ -186,31 +237,47 @@ if (signal.data.faqItems && signal.data.faqItems.length > 0) {
       </section>
     )}
 
-    {/* Email signup */}
-    <section class="bg-soft-gray py-12 border-t border-summit-navy/5">
-      <div class="mx-auto w-full max-w-[45rem] px-6 text-center">
-        <p class="text-summit-navy/70 text-sm mb-4">Get notified when new analysis drops.</p>
-        <form class="flex gap-3 max-w-md mx-auto">
-          <label for="content-email" class="sr-only">Email address</label>
-          <input
-            type="email"
-            id="content-email"
-            name="email"
-            placeholder="you@company.com"
-            required
-            class="flex-1 border border-summit-navy/20 rounded-lg px-4 py-3 text-sm text-summit-navy bg-white placeholder:text-summit-navy/30 focus:outline-none focus:ring-2 focus:ring-signal-blue focus:border-transparent"
-          />
-          <button
-            type="submit"
-            class="bg-signal-blue-btn text-white text-sm font-medium px-5 py-3 rounded-lg hover:bg-signal-blue-dark transition-colors flex-shrink-0"
-          >
-            Subscribe
-          </button>
-        </form>
+    {/* -- Share Buttons — bottom placement -- */}
+    <section class="py-8">
+      <div class="mx-auto w-full max-w-[45rem] px-6">
+        <ShareButtons
+          title={signal.data.title}
+          url={canonicalUrl}
+          description={execSummaryMeta}
+        />
       </div>
     </section>
-  </article>
 
-  {/* CTA */}
-  <BottomCTA heading="If this resonated, let's talk about what it looks like in your world." />
+    {/* -- Comments Section — placeholder with recommendation -- */}
+    <section class="py-8 border-t border-summit-navy/10" id="discussion">
+      <div class="mx-auto w-full max-w-[45rem] px-6">
+        <h2 class="text-summit-navy text-xl font-bold mb-4">Discussion</h2>
+        <div class="bg-soft-gray rounded-lg p-6 text-center">
+          <p class="text-summit-navy/60 text-sm mb-3">
+            Comments are coming soon. Subscribe to get notified when the discussion opens.
+          </p>
+          <form class="flex gap-3 max-w-sm mx-auto" id="comments-email-form">
+            <label for="comments-email" class="sr-only">Email address</label>
+            <input
+              type="email"
+              id="comments-email"
+              name="email"
+              placeholder="you@company.com"
+              required
+              class="flex-1 border border-summit-navy/20 rounded-lg px-4 py-2.5 text-sm text-summit-navy bg-white placeholder:text-summit-navy/30 focus:outline-none focus:ring-2 focus:ring-signal-blue focus:border-transparent"
+            />
+            <button
+              type="submit"
+              class="bg-signal-blue-btn text-white text-sm font-medium px-5 py-2.5 rounded-lg hover:bg-signal-blue-dark transition-colors flex-shrink-0"
+            >
+              Subscribe
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    {/* -- Keep Reading -- */}
+    <KeepReading signals={allSignals} currentSlug={signal.id} />
+  </article>
 </PageLayout>

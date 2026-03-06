@@ -1,0 +1,69 @@
+---
+/**
+ * KeepReading — Post-article discovery section
+ * Shows 2-3 other Summit Signals posts.
+ * Horizontal row desktop, vertical stack mobile.
+ * Brief Section 7.
+ */
+interface SignalEntry {
+  id: string;
+  data: {
+    title: string;
+    teaser?: string;
+    description: string;
+    publishDate: Date;
+    thumbnail?: string;
+    videoUrl?: string;
+  };
+}
+
+interface Props {
+  signals: SignalEntry[];
+  currentSlug: string;
+}
+
+const { signals, currentSlug } = Astro.props;
+
+// Exclude current article, take up to 3
+const otherSignals = signals
+  .filter((s) => s.id !== currentSlug)
+  .sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime())
+  .slice(0, 3);
+---
+
+{otherSignals.length > 0 && (
+  <section class="py-12 md:py-16 border-t border-summit-navy/10">
+    <div class="mx-auto w-full max-w-[45rem] px-6">
+      <h2 class="text-summit-navy text-xl font-bold mb-8">Keep Reading</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        {otherSignals.map((signal) => (
+          <a href={`/summit-signals/${signal.id}`} class="group block">
+            {signal.data.thumbnail && (
+              <div class="aspect-[16/9] rounded-lg overflow-hidden mb-3 bg-soft-gray">
+                <img
+                  src={signal.data.thumbnail}
+                  alt=""
+                  class="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-200"
+                  loading="lazy"
+                />
+              </div>
+            )}
+            <p class="text-summit-navy/50 text-xs mb-1">
+              {new Date(signal.data.publishDate).toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+              })}
+            </p>
+            <h3 class="text-summit-navy font-semibold text-base leading-snug group-hover:text-signal-blue-dark transition-colors mb-1">
+              {signal.data.title}
+            </h3>
+            <p class="text-summit-navy/60 text-sm leading-relaxed">
+              {signal.data.teaser || signal.data.description.slice(0, 100)}
+            </p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+)}

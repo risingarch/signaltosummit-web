@@ -203,6 +203,49 @@
     display: none;
   }
 
+  /* Inline images within articles — full-width with captions */
+  .prose-thesis img {
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-card);
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .prose-thesis img + em {
+    display: block;
+    font-size: 0.8125rem;
+    color: color-mix(in srgb, var(--color-summit-navy) 50%, transparent);
+    margin-bottom: 2rem;
+    font-style: normal;
+  }
+
+  /* Lists within articles */
+  .prose-thesis ul,
+  .prose-thesis ol {
+    margin-bottom: var(--spacing-paragraph);
+    padding-left: 1.5rem;
+  }
+
+  .prose-thesis ul { list-style-type: disc; }
+  .prose-thesis ol { list-style-type: decimal; }
+
+  .prose-thesis li {
+    font-size: var(--font-size-thesis);
+    line-height: var(--line-height-thesis);
+    color: color-mix(in srgb, var(--color-summit-navy) 90%, transparent);
+    margin-bottom: 0.5rem;
+  }
+
+  /* Blockquotes */
+  .prose-thesis blockquote {
+    border-left: 3px solid color-mix(in srgb, var(--color-signal-blue) 30%, transparent);
+    padding-left: 1.5rem;
+    margin: 2rem 0;
+    color: color-mix(in srgb, var(--color-summit-navy) 70%, transparent);
+    font-style: italic;
+  }
+
   @media (max-width: 768px) {
     .prose-thesis h2 { margin-top: 2.5rem; }
     .prose-thesis h3 { margin-top: 2rem; }

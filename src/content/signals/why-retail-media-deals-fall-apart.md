@@ -1,6 +1,8 @@
 ---
 title: "Why Retail Media Deals Fall Apart — and What to Do About It"
 description: "Deals don't fall apart because of your product. They fall apart because platform providers consistently misread what's actually happening inside these organizations."
+teaser: "Platform providers consistently misread what's actually happening inside retail media organizations."
+executiveSummary: "Retail media deals don't fail because of missing features — they fail because platform providers misread the operating reality inside these organizations. Drawing on seven years building measurement infrastructure at a top-10 retail media network, this analysis breaks down the three most common misreads that kill deals late in the cycle: the assumption that scale follows implementation, that executive alignment means the deal will close, and that slow movement signals a priority problem rather than a capacity constraint. Winning organizations close the gap by building delivery systems that remove constraints, proof systems that operationalize measurement, and alignment systems that design stakeholder buy-in from the start."
 pillar: thesis
 publishDate: 2026-03-06T12:00:00
 author: Jaiah Kamara

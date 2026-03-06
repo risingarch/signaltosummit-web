@@ -11,6 +11,8 @@ const signals = defineCollection({
   schema: z.object({
     title: z.string(),
     description: z.string(),
+    teaser: z.string().optional(), // One-line teaser for hub feed cards
+    executiveSummary: z.string().optional(), // 3-4 sentence summary for article header
     pillar: z.enum(['thesis', 'pattern-recognition', 'buyer-education']),
     publishDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
