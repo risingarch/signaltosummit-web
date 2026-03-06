@@ -1,0 +1,113 @@
+---
+/**
+ * SubscribeHandler — PB-044 Phase 1
+ * Global subscribe form handler. Wires all subscribe forms on the site
+ * to POST /api/subscribe. Include once in BaseLayout.
+ */
+---
+
+<script>
+  // Map form IDs to source values for kit.subscribers
+  const FORM_SOURCES: Record<string, string> = {
+    'hub-email-form': 'hub_hero',
+    'footer-email-form': 'footer',
+    'mid-read-email-form': 'mid_read',
+    'comments-email-form': 'comment_placeholder',
+  };
+
+  function getArticleSlug(): string | null {
+    const match = window.location.pathname.match(/^\/summit-signals\/(.+)/);
+    return match ? match[1] : null;
+  }
+
+  function wireForm(formId: string, source: string) {
+    const form = document.getElementById(formId) as HTMLFormElement | null;
+    if (!form) return;
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const emailInput = form.querySelector('input[type="email"]') as HTMLInputElement;
+      const submitBtn = form.querySelector('button[type="submit"]') as HTMLButtonElement;
+      if (!emailInput || !submitBtn) return;
+
+      const email = emailInput.value.trim();
+      if (!email) return;
+
+      // Loading state
+      const originalText = submitBtn.textContent;
+      submitBtn.disabled = true;
+      submitBtn.textContent = '...';
+      emailInput.disabled = true;
+
+      try {
+        // Build metadata
+        const metadata: Record<string, string> = {};
+        const slug = getArticleSlug();
+        if (slug && (source === 'mid_read' || source === 'comment_placeholder')) {
+          metadata.article_slug = slug;
+        }
+        const utm = new URLSearchParams(window.location.search).get('utm_source');
+        if (utm) metadata.utm_source = utm;
+
+        const res = await fetch('/api/subscribe', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            email,
+            source,
+            metadata: Object.keys(metadata).length > 0 ? metadata : undefined,
+          }),
+        });
+
+        const data = await res.json();
+
+        // Replace form with success/error message
+        const messageEl = document.createElement('p');
+        messageEl.className = data.success
+          ? 'text-sm font-medium py-3'
+          : 'text-sm font-medium py-3 text-red-600';
+
+        // Inherit text color from context (dark bg footer vs light bg elsewhere)
+        if (data.success && formId === 'footer-email-form') {
+          messageEl.className += ' text-white/90';
+        } else if (data.success) {
+          messageEl.className += ' text-summit-navy/80';
+        }
+
+        messageEl.textContent = data.message || (data.success
+          ? "Thanks! You're on the list."
+          : 'Something went wrong. Try again.');
+
+        form.replaceWith(messageEl);
+      } catch {
+        // Network error — restore form
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+        emailInput.disabled = false;
+
+        const errorEl = document.createElement('p');
+        errorEl.className = 'text-sm text-red-600 mt-2';
+        errorEl.textContent = 'Connection error. Please try again.';
+        // Remove any existing error
+        const existing = form.parentElement?.querySelector('.text-red-600');
+        if (existing) existing.remove();
+        form.after(errorEl);
+      }
+    });
+  }
+
+  // Wire all forms on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    for (const [formId, source] of Object.entries(FORM_SOURCES)) {
+      wireForm(formId, source);
+    }
+  });
+
+  // Also wire on Astro page transitions (View Transitions)
+  document.addEventListener('astro:page-load', () => {
+    for (const [formId, source] of Object.entries(FORM_SOURCES)) {
+      wireForm(formId, source);
+    }
+  });
+</script>

@@ -10,13 +10,6 @@ videoUrl: https://www.youtube-nocookie.com/embed/r9kU32Wl6Aw
 videoTitle: "The Real Challenge in Retail Media — Signal to Summit"
 videoDuration: "18 minutes"
 draft: false
-faqItems:
-  - question: "Why do retail media deals fall apart?"
-    answer: "Deals don't fall apart because of missing features. They fall apart because platform providers underestimate the delivery friction, the coalition dynamics, and the capacity constraints inside retail media organizations."
-  - question: "What are the three misreads in retail media?"
-    answer: "The three misreads are: (1) assuming scale will follow implementation, (2) assuming the retail media network lead's alignment means the deal will move, and (3) assuming slow movement is a priority problem rather than a capacity constraint."
-  - question: "How can platform providers win more retail media deals?"
-    answer: "Winning organizations build three systems: a delivery system that removes constraints instead of adding tools, a proof system that operationalizes decision-grade measurement, and an alignment system that designs stakeholder buy-in up front."
 ---
 
 # Why Retail Media Deals Fall Apart — and What to Do About It
@@ -197,4 +190,4 @@ Most of my work in retail media wasn't about strategy decks. It was about buildi
 
 If you're a technology or service provider trying to understand why deals stall — the signals are there. I help you read them early.
 
-**[Let's talk.](/contact)**
+**[Let's talk.](/lets-talk)**

@@ -90,20 +90,6 @@ if (signal.data.videoUrl) {
   });
 }
 
-if (signal.data.faqItems && signal.data.faqItems.length > 0) {
-  schemas.push({
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: signal.data.faqItems.map((item: { question: string; answer: string }) => ({
-      '@type': 'Question',
-      name: item.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: item.answer,
-      },
-    })),
-  });
-}
 ---
 
 <PageLayout
@@ -215,27 +201,6 @@ if (signal.data.faqItems && signal.data.faqItems.length > 0) {
 
     {/* -- Mid-Read Subscribe Prompt (positioned via scroll JS) -- */}
     <MidReadSubscribe />
-
-    {/* -- FAQ Section -- */}
-    {signal.data.faqItems && signal.data.faqItems.length > 0 && (
-      <section class="bg-soft-gray py-12 md:py-16">
-        <div class="mx-auto w-full max-w-[45rem] px-6">
-          <h2 class="text-summit-navy mb-8">Frequently Asked Questions</h2>
-          <div class="space-y-6">
-            {signal.data.faqItems.map((item: { question: string; answer: string }) => (
-              <details class="bg-white rounded-lg border border-summit-navy/10">
-                <summary class="px-6 py-4 cursor-pointer text-summit-navy font-medium text-base hover:text-signal-blue-dark transition-colors">
-                  {item.question}
-                </summary>
-                <div class="px-6 pb-5 text-summit-navy/80 leading-relaxed">
-                  {item.answer}
-                </div>
-              </details>
-            ))}
-          </div>
-        </div>
-      </section>
-    )}
 
     {/* -- Share Buttons — bottom placement -- */}
     <section class="py-8">

@@ -2,6 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import Section from '../components/Section.astro';
 import BottomCTA from '../components/BottomCTA.astro';
+import PageTitle from '../components/PageTitle.astro';
 
 const servicesSchema = {
   '@context': 'https://schema.org',
@@ -61,9 +62,10 @@ const servicesSchema = {
   {/* ── Section 3.1: OPENING FRAME ── */}
   <section class="py-20 md:py-28">
     <div class="mx-auto w-full max-w-[45rem] px-6">
-      <h1 class="text-summit-navy mb-4">
+      <PageTitle title="Services" />
+      <h2 class="text-summit-navy mb-4">
         Four ways to work together. Each built around a decision you're trying to make.
-      </h1>
+      </h2>
       <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed">
         Every engagement is scoped to your situation.
       </p>
@@ -103,7 +105,7 @@ const servicesSchema = {
     </div>
 
     <a
-      href="/contact"
+      href="/lets-talk"
       class="inline-block bg-signal-blue-btn text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue-dark transition-colors"
     >
       Start here
@@ -136,7 +138,7 @@ const servicesSchema = {
     </div>
 
     <a
-      href="/contact"
+      href="/lets-talk"
       class="inline-block bg-signal-blue-btn text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue-dark transition-colors"
     >
       Let's scope it
@@ -169,7 +171,7 @@ const servicesSchema = {
     </div>
 
     <a
-      href="/contact"
+      href="/lets-talk"
       class="inline-block bg-signal-blue-btn text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue-dark transition-colors"
     >
       Explore readiness
@@ -202,7 +204,7 @@ const servicesSchema = {
     </div>
 
     <a
-      href="/contact"
+      href="/lets-talk"
       class="inline-block bg-signal-blue-btn text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue-dark transition-colors"
     >
       Let's discuss fit
@@ -216,7 +218,7 @@ const servicesSchema = {
         Not sure where to start? That's what the first conversation is for.
       </p>
       <a
-        href="/contact"
+        href="/lets-talk"
         class="inline-block bg-signal-blue-btn text-white font-medium px-8 py-4 rounded-lg hover:bg-signal-blue-dark transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
       >
         Let's Talk

@@ -23,14 +23,6 @@ const signals = defineCollection({
     thumbnail: z.string().optional(),
     transcript: z.string().optional(),
     draft: z.boolean().default(false),
-    faqItems: z
-      .array(
-        z.object({
-          question: z.string(),
-          answer: z.string(),
-        })
-      )
-      .optional(),
   }),
 });
 

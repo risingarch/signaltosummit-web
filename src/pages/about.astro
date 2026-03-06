@@ -2,6 +2,7 @@
 import PageLayout from '../layouts/PageLayout.astro';
 import Section from '../components/Section.astro';
 import BottomCTA from '../components/BottomCTA.astro';
+import PageTitle from '../components/PageTitle.astro';
 
 const aboutSchema = {
   '@context': 'https://schema.org',
@@ -33,11 +34,12 @@ const aboutSchema = {
   {/* ── Section 2.1: OPENING FRAME ── */}
   <section class="py-20 md:py-28">
     <div class="mx-auto w-full max-w-[45rem] px-6">
+      <PageTitle title="About" />
       <div class="md:flex md:items-start md:gap-12">
         <div class="md:flex-1">
-          <h1 class="text-summit-navy mb-4">
+          <h2 class="text-summit-navy mb-4">
             I spent seven years watching platform providers lose deals they should have won.
-          </h1>
+          </h2>
           <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed">
             Not because their products failed — but because nobody diagnosed what was happening inside the retailer.
           </p>

@@ -12,6 +12,10 @@ export default defineConfig({
   site: 'https://signaltosummit.com',
   output: 'static',
 
+  redirects: {
+    '/contact': '/lets-talk',
+  },
+
   vite: {
     plugins: [tailwindcss()],
   },

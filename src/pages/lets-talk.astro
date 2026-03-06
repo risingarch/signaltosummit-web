@@ -1,5 +1,6 @@
 ---
 import PageLayout from '../layouts/PageLayout.astro';
+import PageTitle from '../components/PageTitle.astro';
 
 const contactSchema = {
   '@context': 'https://schema.org',
@@ -14,7 +15,7 @@ const contactSchema = {
 ---
 
 <PageLayout
-  title="Contact"
+  title="Let's Talk"
   description="Tell Signal to Summit what you're navigating. If there's a fit, we'll find time for a conversation."
   schema={contactSchema}
 >
@@ -23,9 +24,10 @@ const contactSchema = {
     <div class="mx-auto w-full max-w-6xl px-6">
       <div class="md:grid md:grid-cols-[1fr_auto] md:gap-16 md:items-start">
         <div class="max-w-[45rem]">
-      <h1 class="text-summit-navy mb-4">
+      <PageTitle title="Let's Talk" />
+      <h2 class="text-summit-navy mb-4">
         Let's see if there's a fit.
-      </h1>
+      </h2>
       <p class="text-summit-navy/70 text-base md:text-lg leading-relaxed mb-12">
         Tell me what you're navigating. If Signal to Summit is the right resource, we'll find time for a conversation.
       </p>

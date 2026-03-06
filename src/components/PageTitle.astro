@@ -1,0 +1,13 @@
+---
+/**
+ * PageTitle — Shared interior page title
+ * Matches Summit Signals h1 treatment: text-summit-navy mb-4
+ */
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<h1 class="text-summit-navy mb-4">{title}</h1>
