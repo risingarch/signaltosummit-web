@@ -22,13 +22,16 @@ function isActive(href: string): boolean {
   <nav class="px-4 md:px-6 flex items-center justify-between h-16 md:h-20" aria-label="Main navigation">
     <!-- Logo -->
     <a href="/" class="flex-shrink-0" aria-label="Signal to Summit — Home">
-      <img
-        src="/images/logo-horizontal.png"
-        alt="Signal to Summit"
-        class="h-14 md:h-16 w-auto"
-        width="240"
-        height="56"
-      />
+      <picture>
+        <source srcset="/images/logo-horizontal-opt.webp" type="image/webp" />
+        <img
+          src="/images/logo-horizontal-opt.png"
+          alt="Signal to Summit"
+          class="h-14 md:h-16 w-auto"
+          width="724"
+          height="128"
+        />
+      </picture>
     </a>
 
     <!-- Desktop Nav -->
