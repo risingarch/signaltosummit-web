@@ -1,9 +1,21 @@
 /**
  * Subscribe API Route — PB-044 Phase 1
  * Captures email subscriptions to Supabase kit.subscribers table.
+ * Also writes to Notion for Jaiah's viewable dashboard.
  * Uses anon key + RLS (not service key) per security requirements.
  */
 import type { APIRoute } from 'astro';
+
+const NOTION_DB_ID = '31e9d51a-a4bb-8163-8a03-f9c24d91dd03';
+
+const SOURCE_LABELS: Record<string, string> = {
+  'hub_hero': 'Hub Hero',
+  'mid_read': 'Mid-Read',
+  'footer': 'Footer',
+  'article_bottom': 'Article Bottom',
+  'comment_placeholder': 'Comment Placeholder',
+  'sidebar': 'Sidebar',
+};
 
 export const prerender = false;
 
@@ -153,6 +165,33 @@ export const POST: APIRoute = async ({ request }) => {
         JSON.stringify({ success: false, message: 'Something went wrong. Try again.' }),
         { status: 500, headers }
       );
+    }
+
+    // ── Write to Notion (viewable table) ──
+    const notionToken = import.meta.env.NOTION_TOKEN;
+
+    if (notionToken) {
+      try {
+        await fetch('https://api.notion.com/v1/pages', {
+          method: 'POST',
+          headers: {
+            'Authorization': `Bearer ${notionToken}`,
+            'Notion-Version': '2022-06-28',
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            parent: { database_id: NOTION_DB_ID },
+            properties: {
+              'Email': { title: [{ text: { content: cleanEmail } }] },
+              'Source': { select: { name: SOURCE_LABELS[source] || source } },
+              'Status': { select: { name: 'Active' } },
+              'Subscribed': { date: { start: new Date().toISOString() } },
+            },
+          }),
+        });
+      } catch (err) {
+        console.error('Notion subscriber insert error:', err);
+      }
     }
 
     return new Response(

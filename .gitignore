@@ -27,3 +27,4 @@ pnpm-debug.log*
 temporary-screenshots/
 .vercel
 test-results/
+.env*.local
