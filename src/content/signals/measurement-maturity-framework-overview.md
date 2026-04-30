@@ -93,11 +93,11 @@ That unevenness is not a failure. It is the starting point. And the minimum scor
 
 Each dimension has its own thesis paper that breaks down the cost in detail, walks through all five levels with lived-experience descriptions at every stage, surfaces the portfolio question, and lays out the benefit of getting it right.
 
-[![Proof Capacity thesis paper cover art](/images/thesis/mmf/proof-capacity-cover.jpg)](#)
+[![Proof Capacity thesis paper cover art](/images/thesis/mmf/proof-capacity-cover.jpg)](/summit-signals/proof-capacity-the-first-dimension-of-measurement-maturity)
 
 *Click above to read the full Proof Capacity thesis paper.*
 
-[![Operational Delivery thesis paper cover art](/images/thesis/mmf/operational-delivery-cover.jpg)](#)
+[![Operational Delivery thesis paper cover art](/images/thesis/mmf/operational-delivery-cover.jpg)](/summit-signals/operational-delivery-the-second-dimension-of-measurement-maturity)
 
 *Click above to read the full Operational Delivery thesis paper.*
 
