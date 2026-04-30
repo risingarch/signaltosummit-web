@@ -20,6 +20,18 @@ draft: false
 
 ---
 
+<div class="orientation-block">
+<ol>
+<li><a href="#the-cost-of-not-getting-proof-right"><span class="orient-label">The Cost of Not Getting Proof Right</span><span class="orient-context">Four compounding revenue consequences when proof cannot survive scrutiny</span></a></li>
+<li><a href="#five-levels-of-proof-capacity"><span class="orient-label">Five Levels of Proof Capacity</span><span class="orient-context">From Flying Blind to Proof That Travels, scored independently per ad product</span></a></li>
+<li><a href="#the-portfolio-question"><span class="orient-label">The Portfolio Question</span><span class="orient-context">Why your weakest ad product determines what your strongest can earn</span></a></li>
+<li><a href="#the-benefit-of-getting-proof-right"><span class="orient-label">The Benefit of Getting Proof Right</span><span class="orient-context">Retention compounds, national budgets unlock, and finance stops asking the cannibalization question</span></a></li>
+<li><a href="#what-comes-next"><span class="orient-label">What Comes Next</span><span class="orient-context">Operational delivery determines whether proof reaches the person making the spending decision</span></a></li>
+</ol>
+</div>
+
+---
+
 The Signal to Summit Measurement Maturity series begins with a question that determines whether everything else in your measurement function actually matters: can you prove value to the people spending money with you? Not what capabilities you have built. Not what technologies you have adopted. Whether your measurement produces evidence that survives the scrutiny of a brand's analytics team, a holding company's allocation model, or your own finance leadership. That question is the foundation of this framework, and proof capacity is where it begins. If you want the full context before going deeper, the series introduction covers the origin of that research, how the three dimensions work together, and the weakest-link principle that ties the rubric into a single diagnostic. If you are already there, let's go.
 
 If you have not read the series introduction, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
@@ -34,6 +46,10 @@ First, brands refuse to recommit. When a brand advertiser finishes a campaign an
 
 Second, the proof language itself is fractured. The industry cannot even agree on what "incremental" means. The ANA and ARF identified ten distinct definitions of incrementality in use across the industry, with only 48% maximum agreement on any single definition (ANA/ARF, 2024). When a brand asks you to prove incrementality and your definition does not match theirs, the conversation stalls before the data is even reviewed. Proof that uses language the audience does not share is not proof. It is a misunderstanding waiting to erode trust.
 
+<div class="pull-quote">
+<p>Proof that uses language the audience does not share is not proof. It is a misunderstanding waiting to erode trust.</p>
+</div>
+
 Third, the trust deficit is nearly universal. Only 6% of advertisers trust retail media network measurement (Bain, 2024). Ninety-four percent of the brands spending money on your network have reservations about the numbers you are giving them. That is not a gap to close. That is a foundation to rebuild.
 
 ![Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment, Skai/Stratably January 2026 and McKinsey March 2026](/images/thesis/mmf/skai-mckinsey-50-percent.jpg)
@@ -43,6 +59,12 @@ Fourth, half of your future revenue is locked behind proof you cannot yet delive
 And these costs compound commercially. If your existing advertisers cannot get credible proof that their spend worked, they will not increase their investment. You are stuck defending last quarter before you can sell next quarter. Meanwhile, national media budgets, five to ten times larger than trade and shopper budgets, stay out of reach because those dollars flow through holding company media allocators who require proof at a standard most networks cannot meet. Your sales team feels it every cycle. More time defending. Less time expanding. The narrative shifts from growth to justification.
 
 The proof bar is not static. It rises every year. In 2023, ROAS was sufficient for most brand conversations. By 2025, incrementality became the table stakes question. By 2026, cross-channel comparability is what holding companies require. Standing still on proof capacity means falling behind, because the standard advertisers apply is escalating whether you keep up or not.
+
+<div class="stat-block">
+<div class="stat-item"><span class="stat-value">44%</span><span class="stat-label">brand advertisers cite accuracy and reliability as their top measurement frustration (Bain/ANA, 2024)</span></div>
+<div class="stat-item"><span class="stat-value">6%</span><span class="stat-label">advertisers fully trust retail media network measurement (Bain, 2024)</span></div>
+<div class="stat-item"><span class="stat-value">10</span><span class="stat-label">distinct definitions of "incrementality" in industry use, with only 48% maximum agreement on any single one (ANA/ARF, 2024)</span></div>
+</div>
 
 ---
 
@@ -126,6 +148,10 @@ Third, the revenue story changes for your finance leadership. When your retail m
 
 That is the proof capacity dimension. Where you sit on that spectrum determines whether you can answer the most important question any advertiser, agency, or internal stakeholder will ask: did this work, and can you prove it?
 
+<div class="pull-quote-thesis">
+<p>Did this work, and can you prove it?</p>
+</div>
+
 ---
 
 ## WHAT COMES NEXT
@@ -139,3 +165,21 @@ Proof that cannot be delivered when it matters does not change spending decision
 That is what comes next: [Operational Delivery: The Second Dimension of Measurement Maturity](/summit-signals/operational-delivery-the-second-dimension-of-measurement-maturity). How fast can you get proof into the hands of the person who needs it? In what format? At what level of access? And what does it cost you when the answer is not fast enough?
 
 If you have not read the series overview, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
+
+---
+
+## Why I Do This Work
+
+I'm Jaiah Kamara, founder of Signal to Summit Consulting.
+
+I spent fifteen years in retail, seven of those years in central leadership roles building the reporting and measurement infrastructure at a top-ten retail media network. I built systems that drove advertiser confidence: reliable reporting infrastructure, decision frameworks that empowered action, operating models that ensured data quality, and cross-functional ways of working that aligned sales, strategy, and measurement around shared truth.
+
+I now work as an industry analyst and advisor helping retail and commerce media platform providers and operators move this industry forward. I commission structured research that fills the gaps published frameworks miss, and I publish what I find so the industry can move together.
+
+## The Signal to Summit Difference
+
+Most of my work in retail media was not about strategy decks. It was about building systems that drove advertiser confidence and organizational readiness. The Signal to Summit Measurement Maturity Framework is one of those systems, made portable for the industry. The proof capacity dimension you just walked through is one piece of it.
+
+If you are a retail or commerce media operator, platform provider, or holding company partner, and any of what you read above lands on something you are navigating right now, the path to talking is short.
+
+**[Let's talk.](/lets-talk)**

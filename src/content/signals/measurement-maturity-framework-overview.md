@@ -17,6 +17,18 @@ draft: false
 
 ---
 
+<div class="orientation-block">
+<ol>
+<li><a href="#why-this-exists"><span class="orient-label">Why This Exists</span><span class="orient-context">The fifteen-model audit and the question every published framework leaves out</span></a></li>
+<li><a href="#what-this-costs-you"><span class="orient-label">What This Costs You</span><span class="orient-context">The revenue problem operating across trust, delivery, and fragmentation simultaneously</span></a></li>
+<li><a href="#how-the-rubric-works"><span class="orient-label">How the Rubric Works</span><span class="orient-context">Three dimensions, five levels each, scored independently per ad product</span></a></li>
+<li><a href="#going-deeper-the-three-dimensions-of-measurement-maturity"><span class="orient-label">Going Deeper</span><span class="orient-context">Per-dimension thesis papers that break down the cost, the levels, and the benefit</span></a></li>
+<li><a href="#where-to-start"><span class="orient-label">Where to Start</span><span class="orient-context">Find your weakest link, score honestly, invest where the gap costs you most</span></a></li>
+</ol>
+</div>
+
+---
+
 ## WHY THIS EXISTS
 
 When I first started as a leader in measurement at Best Buy, it actually predated the formal launch of Best Buy Ads as a business. Back then I had two analysts reporting to me, and we were responsible for one thing: producing reporting for onsite display.
@@ -53,6 +65,12 @@ These three failures do not add up. They multiply. Proof that cannot be delivere
 
 And the cost is not static. It compounds on a rising timeline. In 2023, ROAS was sufficient for most brand conversations. By 2025, incrementality became the table stakes question. By 2026, cross-channel comparability is what holding companies require to include your network in their allocation models. The proof bar, the delivery standard, and the connectivity expectation are all escalating whether you keep up or not.
 
+<div class="stat-block">
+<div class="stat-item"><span class="stat-value">6%</span><span class="stat-label">advertisers fully trust retail media network measurement (Bain, 2024)</span></div>
+<div class="stat-item"><span class="stat-value">52%</span><span class="stat-label">ad buyers say better measurement would most accelerate retail media investment (Skai/Stratably, January 2026)</span></div>
+<div class="stat-item"><span class="stat-value">97%</span><span class="stat-label">brand advertisers say real-time data access influences investment decisions (NIQ/Coresight, 2024)</span></div>
+</div>
+
 ---
 
 ## HOW THE RUBRIC WORKS
@@ -87,6 +105,10 @@ Those five levels apply to every dimension. But here is what makes the rubric wo
 
 That unevenness is not a failure. It is the starting point. And the minimum score across all three dimensions, for any given ad product, determines what proof can actually reach the person making the spending decision and change their behavior. The chain does not average. It breaks at the weakest link.
 
+<div class="pull-quote">
+<p>The chain does not average. It breaks at the weakest link.</p>
+</div>
+
 ---
 
 ## GOING DEEPER: THE THREE DIMENSIONS OF MEASUREMENT MATURITY
@@ -118,3 +140,25 @@ These three dimensions are not a checklist where advancing each one independentl
 No published maturity model organizes around these three dimensions simultaneously. No published model asks who the proof must convince, whether the infrastructure can deliver it, and whether the systems producing it are actually connected. That gap is why this framework exists.
 
 Start with the dimension where your weakest link sits. That is where the highest-leverage investment lives.
+
+<div class="pull-quote-thesis">
+<p>Start with the dimension where your weakest link sits. That is where the highest-leverage investment lives.</p>
+</div>
+
+---
+
+## Why I Do This Work
+
+I'm Jaiah Kamara, founder of Signal to Summit Consulting.
+
+I spent fifteen years in retail, seven of those years in central leadership roles building the reporting and measurement infrastructure at a top-ten retail media network. I built systems that drove advertiser confidence: reliable reporting infrastructure, decision frameworks that empowered action, operating models that ensured data quality, and cross-functional ways of working that aligned sales, strategy, and measurement around shared truth.
+
+I now work as an industry analyst and advisor helping retail and commerce media platform providers and operators move this industry forward. I commission structured research that fills the gaps published frameworks miss, and I publish what I find so the industry can move together.
+
+## The Signal to Summit Difference
+
+Most of my work in retail media was not about strategy decks. It was about building systems that drove advertiser confidence and organizational readiness. The Signal to Summit Measurement Maturity Framework is one of those systems, made portable for the industry.
+
+If you are a retail or commerce media operator, platform provider, or holding company partner, and any of what you read above lands on something you are navigating right now, the path to talking is short.
+
+**[Let's talk.](/lets-talk)**

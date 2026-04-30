@@ -20,6 +20,18 @@ draft: false
 
 ---
 
+<div class="orientation-block">
+<ol>
+<li><a href="#the-cost-of-not-getting-delivery-right"><span class="orient-label">The Cost of Not Getting Delivery Right</span><span class="orient-context">Four ways slow proof loses deals brands wanted to give you</span></a></li>
+<li><a href="#five-levels-of-operational-delivery"><span class="orient-label">Five Levels of Operational Delivery</span><span class="orient-context">From Manual and Reactive to Delivery as Competitive Advantage, scored per ad product</span></a></li>
+<li><a href="#the-portfolio-question"><span class="orient-label">The Portfolio Question</span><span class="orient-context">Your growth formats are the ones still being delivered manually, on the same products that need scale most</span></a></li>
+<li><a href="#the-benefit-of-getting-delivery-right"><span class="orient-label">The Benefit of Getting Delivery Right</span><span class="orient-context">Capacity changes permanently, switching costs accumulate, and you get into models you were never in before</span></a></li>
+<li><a href="#what-comes-next"><span class="orient-label">What Comes Next</span><span class="orient-context">Ecosystem unification determines whether proof and delivery work across your full portfolio or only one ad product at a time</span></a></li>
+</ol>
+</div>
+
+---
+
 The Signal to Summit Measurement Maturity series introduced three dimensions that determine whether proof reaches the person making the spending decision. Proof capacity was the first: what can you actually demonstrate, and to whom. This paper goes deeper on the second dimension, operational delivery. Because what the first paper made clear is this: proof that cannot get into the right hands, in the right format, at the right moment, does not change a spending decision. Operational delivery is the dimension most retail media organizations underestimate, because the failure is invisible. The work was done. The proof was real. The deal still did not come back.
 
 If you have not read the series introduction, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
@@ -36,6 +48,10 @@ First, your proof expires before it arrives. Your measurement team produces a cr
 
 Second, you lose deals to networks that deliver faster, not better. A brand is evaluating three retail media networks. Your measurement is stronger. Your incrementality methodology is more rigorous. But the other network gives them a self-serve dashboard with daily refresh and API access for their agency. You give them a PDF three weeks after the campaign. Ninety-seven percent of brand advertisers say real-time data access directly influences their investment decisions (NIQ/Coresight, 2024). The brand does not choose the better proof. They choose the proof they can actually use in their workflow. You are not losing on quality. You are losing on access.
 
+<div class="pull-quote">
+<p>The brand does not choose the better proof. They choose the proof they can actually use in their workflow.</p>
+</div>
+
 ![Real-time data access directly influences brand advertiser investment decisions, NIQ/Coresight 2024](/images/thesis/mmf/operational-delivery-quote.jpg)
 
 Third, your team becomes the bottleneck, and it does not scale. Every custom report, every QBR deck assembly, every request to pull something runs through the same two or three analysts. When your network had 15 advertisers, that worked. Now you have 50, and those analysts are buried. Response times stretch. Errors creep into manually assembled reports. Your best measurement people spend their days formatting spreadsheets instead of driving real value for your clients and your business. You cannot hire your way out of this because the problem is not headcount. It is architecture. Adding analysts to a manual delivery process gives you linear capacity at linear cost. That is a service business, not a scaled media platform.
@@ -45,6 +61,12 @@ Put a number on it. A mid-size retail media network runs roughly 50 active campa
 Fourth, the window between successful test and scaled commitment is shorter than most networks realize. When a brand tests a new ad product, there is grace. Everyone knows it is new. Nobody demands API access for a pilot. But the moment that test succeeds and the brand wants to scale it into next year's plan, delivery expectations shift immediately. If your delivery infrastructure for that format is still in test mode, still manual, still requiring your team to pull and format every report, you cannot meet the standard that scaling requires. The brand wanted to grow with you. Your delivery infrastructure told them you were not ready.
 
 And these costs compound on a rising timeline. Three years ago, a quarterly PDF was acceptable for most brand conversations. Today, agencies expect dashboard access at minimum. By next year, API integration and clean room interoperability will be table stakes for holding company consideration. The networks investing in delivery infrastructure now are building a compounding advantage. Every quarter they operate with faster, more accessible delivery, they accumulate advertiser relationships, agency integrations, and workflow habits that become switching costs. The networks that wait are not standing still. They are falling behind, because the bar is rising whether they keep up or not.
+
+<div class="stat-block">
+<div class="stat-item"><span class="stat-value">97%</span><span class="stat-label">brand advertisers say real-time data access directly influences investment decisions (NIQ/Coresight, 2024)</span></div>
+<div class="stat-item"><span class="stat-value">2,400</span><span class="stat-label">analyst hours per year on manual report assembly at a mid-size retail media network running 50 campaigns per quarter</span></div>
+<div class="stat-item"><span class="stat-value">$500K+</span><span class="stat-label">in annual revenue lost to slow proof delivery, when 10% of campaigns do not renew because proof arrived after the planning window closed</span></div>
+</div>
 
 ---
 
@@ -120,6 +142,10 @@ Second, your advertiser relationships develop switching costs they did not have 
 
 Third, you get into models you were never in before. Holding company allocation models do not manually evaluate every network for every client. They pull from the networks whose data is accessible at the cadence and format their systems require. If your data is not in the model, you are not in the consideration set, regardless of how strong your proof is. Level 5 delivery is the entry requirement for the allocation decisions where the largest budgets get moved. Proof capacity earns you the right to be evaluated. Delivery infrastructure determines whether you are actually in the room when the decision gets made.
 
+<div class="pull-quote-thesis">
+<p>Proof capacity earns you the right to be evaluated. Delivery infrastructure determines whether you are actually in the room when the decision gets made.</p>
+</div>
+
 That is the operational delivery dimension. Where you sit on that spectrum determines whether the proof your measurement team produces actually reaches the person making the spending decision, in the format they need, at the moment their decision requires it.
 
 ---
@@ -135,3 +161,21 @@ Proof and delivery that function within each ad product but cannot connect acros
 That is what comes next: Ecosystem Unification: The Third Dimension of Measurement Maturity. How connected are the systems producing your proof, and what does it cost when the answer is not connected enough? Coming soon.
 
 If you have not read the prior installments, the [series overview](/summit-signals/measurement-maturity-framework-overview) and [Proof Capacity](/summit-signals/proof-capacity-the-first-dimension-of-measurement-maturity) are the entry points.
+
+---
+
+## Why I Do This Work
+
+I'm Jaiah Kamara, founder of Signal to Summit Consulting.
+
+I spent fifteen years in retail, seven of those years in central leadership roles building the reporting and measurement infrastructure at a top-ten retail media network. I built systems that drove advertiser confidence: reliable reporting infrastructure, decision frameworks that empowered action, operating models that ensured data quality, and cross-functional ways of working that aligned sales, strategy, and measurement around shared truth.
+
+I now work as an industry analyst and advisor helping retail and commerce media platform providers and operators move this industry forward. I commission structured research that fills the gaps published frameworks miss, and I publish what I find so the industry can move together.
+
+## The Signal to Summit Difference
+
+Most of my work in retail media was not about strategy decks. It was about building systems that drove advertiser confidence and organizational readiness. The Signal to Summit Measurement Maturity Framework is one of those systems, made portable for the industry. The operational delivery dimension you just walked through is one piece of it.
+
+If you are a retail or commerce media operator, platform provider, or holding company partner, and any of what you read above lands on something you are navigating right now, the path to talking is short.
+
+**[Let's talk.](/lets-talk)**
