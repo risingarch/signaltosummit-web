@@ -52,7 +52,7 @@ Second, you lose deals to networks that deliver faster, not better. A brand is e
 <p>The brand does not choose the better proof. They choose the proof they can actually use in their workflow.</p>
 </div>
 
-![Real-time data access directly influences brand advertiser investment decisions, NIQ/Coresight 2024](/images/thesis/mmf/operational-delivery-quote.jpg)
+![Ninety-seven percent of brand advertisers say real-time data access directly influences their investment decisions, NIQ/Coresight 2024](/images/thesis/mmf/operational-delivery-stat-banner.jpg)
 
 Third, your team becomes the bottleneck, and it does not scale. Every custom report, every QBR deck assembly, every request to pull something runs through the same two or three analysts. When your network had 15 advertisers, that worked. Now you have 50, and those analysts are buried. Response times stretch. Errors creep into manually assembled reports. Your best measurement people spend their days formatting spreadsheets instead of driving real value for your clients and your business. You cannot hire your way out of this because the problem is not headcount. It is architecture. Adding analysts to a manual delivery process gives you linear capacity at linear cost. That is a service business, not a scaled media platform.
 
@@ -74,13 +74,15 @@ And these costs compound on a rising timeline. Three years ago, a quarterly PDF 
 
 ![Five levels of Operational Delivery, from Manual and Reactive to Delivery as Competitive Advantage](/images/thesis/mmf/operational-delivery-five-levels.jpg)
 
+![Operational Delivery Level 1, Manual and Reactive, illustration](/images/thesis/mmf/operational-delivery-level-1.jpg)
+
 **Level 1: Manual and Reactive.** Every report is a custom job. A brand emails asking for campaign results. Someone on your team pulls the data, formats a spreadsheet or PDF, and sends it back. There is no standard template, no scheduled delivery, no self-serve access. If the brand wants something, they have to ask for it. If they ask on a Friday, they might get it Tuesday. If the analyst who knows how to pull it is out, it waits.
 
 This is how every network starts, and it works at small scale. Ten advertisers, two analysts, manageable. But delivery at this level is entirely person-dependent. The knowledge of how to pull each format's data, which vendor login to use, which columns to include, lives in someone's head. When that person is unavailable, delivery stops. When they leave, institutional knowledge walks out with them.
 
 Why: There is no delivery infrastructure yet, only delivery effort. Each report is produced from scratch because no standardized data pipeline connects your measurement sources to a repeatable output layer. The vendor platforms, the DSP dashboards, the streaming partner portals, each requires a separate login, a separate export, a separate formatting step. The analyst is the integration layer. That is sustainable at pilot scale. It breaks as volume grows.
 
-<!-- TODO 2026-05-01: insert Level 2 per-level illustration when Jaiah delivers per-level art kit -->
+![Operational Delivery Level 2, Standardized but Still Manual, illustration](/images/thesis/mmf/operational-delivery-level-2.jpg)
 
 **Level 2: Standardized but Still Manual.** You built templates. You have a standard campaign report format that most of your team uses most of the time. Delivery is more consistent than Level 1. Brands know roughly what to expect and roughly when to expect it. But everything still runs through your team. Reports go out on a schedule because someone set calendar reminders to pull and send them. QBR decks get assembled by analysts who know the template. If a brand wants something outside the template, it is still a custom request that goes into a queue.
 
@@ -88,7 +90,7 @@ The bottleneck is more visible now. You can see which analysts are overloaded. Y
 
 Why: Standardization is a process improvement, not an infrastructure improvement. You organized the manual work. You made it more consistent. But the data still has to be pulled from each source separately, formatted against a template, and sent through email or a file share. No automated pipeline moves data from source to output. No self-serve layer gives advertisers access without your team in the middle. The template reduced variance in what gets delivered. It did not reduce the labor required to deliver it.
 
-<!-- TODO 2026-05-01: insert Level 3 per-level illustration when Jaiah delivers per-level art kit -->
+![Operational Delivery Level 3, Dashboards Are Live but Access Is Limited, illustration](/images/thesis/mmf/operational-delivery-level-3.jpg)
 
 **Level 3: Dashboards Are Live, Access Is Limited.** You have a reporting dashboard. Brands can log in and see campaign performance without emailing your team. Data refreshes on a regular cadence, daily or weekly depending on the format. For your core ad products, the manual report assembly that defined Levels 1 and 2 is largely gone. Your analysts are no longer spending their days pulling and formatting. They are spending their time on analysis, on answering harder questions, on improving methodology.
 
@@ -96,7 +98,7 @@ But the dashboard serves your needs more than your advertisers' needs. The metri
 
 Why: The dashboard solved the internal bottleneck. It did not solve the external access problem. Building a reporting interface requires choices about what to surface, how to organize it, and what level of access to grant. At Level 3, those choices were made by your team, for your team's reporting needs. The data model underneath the dashboard was not designed for external consumption. API endpoints do not exist or are not documented for advertiser use. Clean room integration has not been built. The gap between what you can see internally and what an agency can consume programmatically is still wide.
 
-<!-- TODO 2026-05-01: insert Level 4 per-level illustration when Jaiah delivers per-level art kit -->
+![Operational Delivery Level 4, Proof Delivered at Decision Cadence, illustration](/images/thesis/mmf/operational-delivery-level-4.jpg)
 
 **Level 4: Proof Delivered at Decision Cadence.** Your delivery infrastructure matches the cadence at which your audiences make decisions. Brand media buyers get daily performance visibility. Agency teams have dashboard access with enough flexibility to pull their own cuts and answer their own questions without routing requests through your team. For your most advanced partners, API access lets them pull your data into their own systems. Clean room collaboration is available for holding company partners who require it.
 
@@ -106,7 +108,7 @@ But the system was built to serve your current advertiser base. New ad products,
 
 Why: Level 4 delivery is infrastructure-led for established formats and still person-led for new ones. The data pipelines, API endpoints, and clean room connections that power fast, accessible delivery for sponsored products and onsite display were built over time, with deliberate investment. Those same investments have not yet been made for offsite programmatic, CTV, or in-store. Each new format starts at Level 1 delivery and climbs the maturity curve independently. The network's overall delivery capability is an average across formats, and that average masks the gaps that matter most to a brand running across your full portfolio.
 
-<!-- TODO 2026-05-01: insert Level 5 per-level illustration when Jaiah delivers per-level art kit -->
+![Operational Delivery Level 5, Delivery as Competitive Advantage, illustration](/images/thesis/mmf/operational-delivery-level-5.jpg)
 
 **Level 5: Delivery as Competitive Advantage.** Your delivery infrastructure is a reason brands choose your network, not just a capability you have to defend. Agencies build workflows around your API because it is reliable, documented, and designed for how they operate. Holding company partners include your network in their automated allocation models because your data is accessible at the cadence and format their systems require. Real-time performance visibility is standard across your full ad product portfolio, not just your legacy formats.
 

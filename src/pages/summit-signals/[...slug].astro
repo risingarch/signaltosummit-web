@@ -139,6 +139,22 @@ if (signal.data.videoUrl) {
       </div>
     </section>
 
+    {/* -- Header Image (if thumbnail set, renders as hero art at top) -- */}
+    {signal.data.thumbnail && (
+      <section class="pb-8 md:pb-12">
+        <div class="mx-auto w-full max-w-[45rem] px-6">
+          <div class="rounded-lg overflow-hidden">
+            <img
+              src={signal.data.thumbnail}
+              alt={`${signal.data.title} header art`}
+              class="w-full h-auto"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+    )}
+
     {/* -- Executive Summary -- */}
     {signal.data.executiveSummary && (
       <section class="pb-8 md:pb-12">
