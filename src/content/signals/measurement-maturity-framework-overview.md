@@ -1,23 +1,23 @@
 ---
-title: "A Measurement Maturity Framework for Retail and Commerce Media"
+title: "Measurement Maturity: A Framework for Retail and Commerce Media"
 description: "Three dimensions. Five levels each. Scored per ad product. The framework retail media teams can use to evaluate where they stand against the proof standards their audiences actually apply in 2026."
 teaser: "The rubric retail media teams have been missing — built from what fifteen published models left out."
 executiveSummary: "Fifteen published retail media measurement maturity models, from the leading research firms, consultancies, and industry bodies. Not one of them asks the question that actually determines whether the money comes back: can you prove value to the people spending money with you? This framework fills that gap. Three dimensions — proof capacity, operational delivery, ecosystem unification — scored independently, per ad product, across five levels of maturity. The chain does not average. It breaks at the weakest link."
 pillar: thesis
 publishDate: 2026-04-14T12:00:00
 author: Jaiah Kamara
-videoTitle: "A Measurement Maturity Framework for Retail and Commerce Media — Signal to Summit"
+videoTitle: "Measurement Maturity: A Framework for Retail and Commerce Media — Signal to Summit"
 videoDuration: "coming soon"
 draft: false
 ---
 
-# A Measurement Maturity Framework for Retail and Commerce Media
+# Measurement Maturity: A Framework for Retail and Commerce Media
 
-*Jaiah Kamara, Founder — Signal to Summit*
+*Jaiah Kamara, Founder, Signal to Summit | 7 Years Building Measurement at Best Buy Ads | Industry Analyst and Advisor to Retail Media Platform Providers*
 
 ---
 
-## Why This Exists
+## WHY THIS EXISTS
 
 When I first started as a leader in measurement at Best Buy, it actually predated the formal launch of Best Buy Ads as a business. Back then I had two analysts reporting to me, and we were responsible for one thing: producing reporting for onsite display.
 
@@ -27,27 +27,23 @@ Together we built something I am very proud of. The feedback and enthusiasm I re
 
 Now, as an industry analyst and consultant working to help move this industry forward, I genuinely wanted to shed light on what I knew would have been incredibly valuable to me during my journey, and make that information accessible to our partners across the industry. Especially retail and commerce media organizations trying to build and scale their business in 2026.
 
-As I set out to provide those insights, I commissioned a structured review of what measurement maturity models and frameworks were available in the marketplace. Fifteen published models from the leading research firms, consultancies, and industry bodies, everything published between 2020 and 2026 that claimed to assess retail media measurement capability. One thing became very clear. There is a lot of emphasis on what capabilities you have built, what technologies you have tried to add, what channels you have added to your portfolio. But what was available felt dated. And as a former operator and measurement leader who built the team and capability from ground zero to a thriving function inside a top-ten retail media business for a Fortune 100 company, I felt something critical was missing.
-
-<div class="pull-quote">
-<p>Not one of those fifteen models asks the question that actually determines whether the money comes back: can you prove value to the people spending money with you?</p>
-</div>
+As I set out to provide those insights, I commissioned a structured review of what measurement maturity models and frameworks were available in the marketplace. Fifteen published models from the leading research firms, consultancies, and industry bodies, everything published between 2020 and 2026 that claimed to assess retail media measurement capability. One thing became very clear. There is a lot of emphasis on what capabilities you have built, what technologies you have tried to add, what channels you have added to your portfolio. But what was available felt dated. And as a former operator and measurement leader who built the team and capability from ground zero to a thriving function inside a top-ten retail media business for a Fortune 100 company, I felt something critical was missing. Not one of those fifteen models asks the question that actually determines whether the money comes back: can you prove value to the people spending money with you?
 
 So I built what I could not find. A rubric that retail and commerce media teams can use to evaluate where they stand, not against a checklist of capabilities adopted, but against the proof standards their advertisers, agencies, and internal stakeholders actually apply in 2026.
 
 ---
 
-## What This Costs You
+## WHAT THIS COSTS YOU
 
 Measurement failure is not an abstract problem. It is a revenue problem that operates across three dimensions simultaneously.
 
-![Three failures compound in retail media measurement: Trust Failure, Delivery Failure, and Fragmentation Failure — each multiplies the others rather than adding](/images/thesis/mmf/three-failures-compound.svg)
+Start with trust. Only 6% of advertisers fully trust retail media network measurement (Bain, 2024). Ninety-four percent of the brands spending money on your network have reservations about the numbers you are giving them. That is not a gap to close. That is a foundation to rebuild. And the consequence is direct.
 
-Start with trust. Only 6% of advertisers fully trust retail media network measurement (Bain, 2024). Ninety-four percent of the brands spending money on your network have reservations about the numbers you are giving them. That is not a gap to close. That is a foundation to rebuild. And the consequence is direct: roughly 50% of future retail media investment is contingent on measurement improvement, according to two independent 2024 studies. The money exists. It is waiting. It will not move until proof gets credible.
+![Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment — Skai/Stratably January 2026 and McKinsey March 2026](/images/thesis/mmf/skai-mckinsey-50-percent.jpg)
+
+Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment (Skai/Stratably, January 2026). Separately, 50% of advertisers say improved measurement would immediately unlock incremental spend (McKinsey, March 2026). Two independent surveys. Essentially the same number. The money exists. It is waiting. It will not move until proof gets credible.
 
 Now add delivery. Even when credible proof exists, it often arrives too late to matter. A brand's media buyer has already planned the next flight. The agency has already reallocated. Ninety-seven percent of brand advertisers say real-time data access directly influences their investment decisions (NIQ/Coresight, 2024). The brand does not choose the better proof. They choose the proof they can actually use in their workflow.
-
-<div class="data-callout"><span class="callout-value">$500K+</span><span class="callout-label">in annual revenue that never comes back when proof arrives too late, for a mid-size RMN running 50 campaigns per quarter</span></div>
 
 Put a number on the operational cost. A mid-size retail media network runs roughly 50 active campaigns per quarter. At early maturity levels, each campaign report takes approximately four hours of manual assembly: pulling data from a vendor platform, exporting, formatting, delivering. At a monthly reporting cadence, that is 2,400 analyst hours per year on report assembly alone. At a fully loaded cost of $125K per analyst, that is more than one full salary consumed entirely by assembling reports that arrive too late to influence the next spending decision. Now look at what that slow delivery actually costs. If even 10% of those campaigns do not renew because proof arrived after the brand's planning window closed, and the average campaign is worth $100K to $150K, that is $500K or more per year in revenue that never came back. Not because your proof was wrong. Because it was late.
 
@@ -59,15 +55,19 @@ And the cost is not static. It compounds on a rising timeline. In 2023, ROAS was
 
 ---
 
-## How the Rubric Works
+## HOW THE RUBRIC WORKS
 
 This rubric is built on a simple premise. Measurement maturity is not one thing. It is three things, and they are independent of each other.
 
-![The three dimensions of measurement maturity form a chain: Proof Capacity, Operational Delivery, and Ecosystem Unification. The chain does not average. It breaks at the weakest link.](/images/thesis/mmf/three-dimensions-chain.svg)
+![Proof Capacity dimension icon](/images/thesis/mmf/proof-capacity-icon.jpg)
 
 The first dimension is proof capacity. What can you prove, and to whom? Can you demonstrate that an advertiser's spend on your network drove an incremental outcome? Can you defend that proof when a brand's analytics team pressure-tests it? Can you produce evidence that survives translation into a holding company's cross-channel allocation model? Proof capacity is about what your measurement can demonstrate, not what data you collect.
 
+![Operational Delivery dimension icon](/images/thesis/mmf/operational-delivery-icon.jpg)
+
 The second dimension is operational delivery. Can you get that proof into the hands of the person who needs it, in the format they require, at the speed their decisions demand? A credible incrementality analysis that arrives six weeks after a campaign ended did not inform the next spending decision. It informed nothing. Delivery determines whether proof changes behavior or sits in a file nobody opens.
+
+![Ecosystem Unification dimension icon](/images/thesis/mmf/ecosystem-unification-icon.jpg)
 
 The third dimension is ecosystem unification. Are the systems producing your proof actually connected to each other, and are they connected to the rest of the retailer's business? A brand runs sponsored products, onsite display, offsite programmatic, and CTV on your network. If each ad product reports through a different system with a different identity backbone and a different methodology, you cannot answer the most basic portfolio question: did these formats work together, or did they cannibalize each other? Unification determines whether your proof tells a coherent story across your full channel portfolio, or only works one ad product at a time.
 
@@ -83,54 +83,38 @@ Each dimension operates on five levels of maturity.
 
 **Level 5: Unified.** Your measurement is not just credible, fast, or connected. It is portable. It travels outside your walls. Agencies can use it in their models. Brands build their workflow around it. Your proof, your delivery infrastructure, and your connected ecosystem become competitive advantages that attract dollars rather than defend them.
 
-Those five levels apply to every dimension. Here is how each one looks across its own five-level progression.
+Those five levels apply to every dimension. But here is what makes the rubric work in practice: you do not score your organization once. You score each ad product, across each dimension, independently. Your sponsored products might sit at Level 4 on proof capacity, Level 3 on delivery, and Level 3 on unification. Your CTV might be at Level 1 across all three. Your social activations might not register on the scale yet.
 
-![Proof Capacity five-level overview: Fragmented, Standardized, Connected, Integrated, Unified](/images/thesis/mmf/proof-capacity-five-levels.jpg)
-
-![Operational Delivery five-level overview: Fragmented, Standardized, Connected, Integrated, Unified](/images/thesis/mmf/operational-delivery-five-levels.jpg)
-
-![Ecosystem Unification five-level overview: Fragmented, Standardized, Connected, Integrated, Unified](/images/thesis/mmf/ecosystem-unification-five-levels.jpg)
-
-Here is what makes the rubric work in practice: you do not score your organization once. You score each ad product, across each dimension, independently. Your sponsored products might sit at Level 4 on proof capacity, Level 3 on delivery, and Level 3 on unification. Your CTV might be at Level 1 across all three. Your social activations might not register on the scale yet.
-
-That unevenness is not a failure. It is the starting point. And the minimum score across all three dimensions, for any given ad product, determines what proof can actually reach the person making the spending decision and change their behavior.
-
-<div class="pull-quote">
-<p>The chain does not average. It breaks at the weakest link.</p>
-</div>
+That unevenness is not a failure. It is the starting point. And the minimum score across all three dimensions, for any given ad product, determines what proof can actually reach the person making the spending decision and change their behavior. The chain does not average. It breaks at the weakest link.
 
 ---
 
-## Going Deeper
+## GOING DEEPER: THE THREE DIMENSIONS OF MEASUREMENT MATURITY
 
 Each dimension has its own thesis paper that breaks down the cost in detail, walks through all five levels with lived-experience descriptions at every stage, surfaces the portfolio question, and lays out the benefit of getting it right.
 
-**Proof Capacity** is the first deep dive in this series. Coming soon.
+[![Proof Capacity thesis paper cover art](/images/thesis/mmf/proof-capacity-cover.jpg)](#)
 
-**Operational Delivery** is the second. Coming soon.
+*Click above to read the full Proof Capacity thesis paper.*
 
-**Ecosystem Unification** is the third. Coming soon.
+[![Operational Delivery thesis paper cover art](/images/thesis/mmf/operational-delivery-cover.jpg)](#)
+
+*Click above to read the full Operational Delivery thesis paper.*
+
+![Ecosystem Unification thesis paper cover art](/images/thesis/mmf/ecosystem-unification-cover.jpg)
+
+*Ecosystem Unification thesis paper (coming soon).*
 
 ---
 
-## Where to Start
+## WHERE TO START
 
 Three dimensions. Five levels each. Scored per ad product. That can feel like a lot to hold at once. But the rubric simplifies to one question: where is your weakest link?
 
 Find the ad product that matters most to your growth plan. Score it honestly across all three dimensions. The lowest score is your constraint. Not the dimension where you are strongest. The one where the gap is costing you the most.
-
-<div class="pull-quote">
-<p>The lowest score is your constraint. Not the dimension where you are strongest. The one where the gap is costing you the most.</p>
-</div>
 
 These three dimensions are not a checklist where advancing each one independently adds up to maturity. They are a chain. A retailer at Level 4 on proof and Level 4 on delivery but Level 1 on unification does not have a "two out of three" profile. They have a Level 1 constraint on whether the other two can function across their portfolio.
 
 No published maturity model organizes around these three dimensions simultaneously. No published model asks who the proof must convince, whether the infrastructure can deliver it, and whether the systems producing it are actually connected. That gap is why this framework exists.
 
 Start with the dimension where your weakest link sits. That is where the highest-leverage investment lives.
-
-<div class="stat-block">
-<div class="stat-item"><span class="stat-value">15 models</span><span class="stat-label">retail media maturity models reviewed</span></div>
-<div class="stat-item"><span class="stat-value">7 years</span><span class="stat-label">building measurement at a top-10 RMN</span></div>
-<div class="stat-item"><span class="stat-value">3 dimensions</span><span class="stat-label">that determine whether proof gets paid for</span></div>
-</div>
