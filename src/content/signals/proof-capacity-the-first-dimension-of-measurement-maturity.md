@@ -52,7 +52,7 @@ Second, the proof language itself is fractured. The industry cannot even agree o
 
 Third, the trust deficit is nearly universal. Only 6% of advertisers trust retail media network measurement (Bain, 2024). Ninety-four percent of the brands spending money on your network have reservations about the numbers you are giving them. That is not a gap to close. That is a foundation to rebuild.
 
-![Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment, Skai/Stratably January 2026 and McKinsey March 2026](/images/thesis/mmf/skai-mckinsey-50-percent.jpg)
+![Only 6 percent of advertisers fully trust retail media network measurement, Bain 2024](/images/thesis/mmf/6-percent-trust-stat.jpg)
 
 Fourth, half of your future revenue is locked behind proof you cannot yet deliver. Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment (Skai/Stratably, January 2026). Separately, 50% of advertisers say improved measurement would immediately unlock incremental spend (McKinsey, March 2026). Two independent surveys. Essentially the same number. The money exists. It is waiting. It will not move until proof gets credible.
 
@@ -72,13 +72,15 @@ The proof bar is not static. It rises every year. In 2023, ROAS was sufficient f
 
 ![Five levels of Proof Capacity, from Flying Blind to Proof That Travels](/images/thesis/mmf/proof-capacity-five-levels.jpg)
 
+![Proof Capacity Level 1, Flying Blind, illustration](/images/thesis/mmf/proof-level-1.jpg)
+
 **Level 1: Flying Blind.** You launched retail media. You have ad products in market. Brands are spending. But when someone asks "did this work," you are pulling a screenshot from a vendor dashboard or a platform report that your team did not build, does not control, and cannot explain. The number on the screen might say 4x ROAS, but you do not know what went into it. You do not know the attribution window. You do not know if it deduplicated across your other ad products. You are borrowing someone else's proof and hoping nobody asks a hard question.
 
 This is true across your entire portfolio. Your sponsored products report through one vendor. Your onsite display reports through another. Your offsite programmatic partner sends a weekly summary your team pastes into a deck. If you have CTV, the streaming partner provides their own numbers on their own timeline. Social activations come back as platform-reported aggregates you cannot verify. Paid search runs through an auction system with its own conversion logic. Each channel hands you a number. None of them talk to each other. Nobody on your team is running their own tests. The concept of measuring incrementality has not entered the conversation, because no dashboard number has been challenged yet.
 
 Why: You do not own the methodology producing the data in any channel. Each vendor or partner chose its own attribution window, conversion logic, and deduplication approach. Your sponsored products vendor made one set of choices. Your offsite DSP partner made different ones. Your CTV partner made yet another. You have no visibility into any of these choices, and no ability to compare across them, because they were never designed to be compared. The number could be 4x or 2x depending on settings you never selected and cannot change. Until you own the methodology, you cannot interrogate the output. Which means you cannot defend it when someone does. Incrementality testing, media mix modeling, none of it exists here, not because it is too advanced, but because there is no organizational demand for it yet. The self-attributed numbers stand unchallenged, channel by channel, in mutual isolation.
 
-<!-- TODO 2026-05-01: insert Level 2 per-level illustration when Jaiah delivers per-level art kit -->
+![Proof Capacity Level 2, Numbers That Disagree, illustration](/images/thesis/mmf/proof-level-2.jpg)
 
 **Level 2: Numbers That Disagree.** You started building your own measurement. You have reports. Maybe multiple reports. The problem is they do not agree with each other. Your sponsored products team has one set of numbers. Your offsite partner has another. Your analytics team ran something that contradicts both. When a brand asks for results, the answer depends on who pulls the report.
 
@@ -88,7 +90,7 @@ Why: Each team or ad product built measurement independently. Sponsored has one 
 
 The lift studies arriving at this stage compound the problem. Each one makes independent choices about audience definition, conversion window, and holdout design. They are not comparable to each other, and none is comparable to the always-on dashboard metrics. MMM has not entered yet because it requires historical data at sufficient depth, outcome data at the right granularity, and statistical expertise the team has not built. The instinct to prove incrementality has arrived. The infrastructure to do it consistently has not.
 
-<!-- TODO 2026-05-01: insert Level 3 per-level illustration when Jaiah delivers per-level art kit -->
+![Proof Capacity Level 3, You Can Prove It for One, illustration](/images/thesis/mmf/proof-level-3.jpg)
 
 **Level 3: You Can Prove It for One.** You have a credible proof story for at least one ad product, maybe two. Your sponsored products have a clean attribution methodology your team controls. Or you ran a series of incrementality tests for your onsite display that held up when the brand's analytics team reviewed them. When a client asks "did this work" for that format, you have an answer you can stand behind.
 
@@ -98,7 +100,7 @@ Why: The team that built strong proof for one ad product made deliberate choices
 
 The structural gap is data pipelines. Your strongest format has a clean data pipeline from ad exposure to outcome. Your weaker formats do not. CTV exposure data lives with the streaming partner. In-store activation data is often disconnected from transaction data. Offsite match-back runs through a partner with variable match rates. Each gap is a place where the proof chain breaks. MMM may be arriving at this stage, particularly for the formats where enough historical data exists, but it is not yet calibrated across your portfolio. Incrementality testing is ad hoc: strong for the format you prioritized, absent or inconsistent for the rest.
 
-<!-- TODO 2026-05-01: insert Level 4 per-level illustration when Jaiah delivers per-level art kit -->
+![Proof Capacity Level 4, Proof Across the Portfolio on Your Terms, illustration](/images/thesis/mmf/proof-level-4.jpg)
 
 **Level 4: Proof Across the Portfolio, on Your Terms.** You can produce credible proof across most of your ad products. Sponsored, onsite display, offsite, CTV, paid search, social, in-store. Each format has a measurement methodology your team controls, and the methodologies are consistent enough that you can compare performance across formats without the numbers contradicting each other in ways you cannot explain.
 
@@ -108,7 +110,7 @@ Why: Each format's proof story was built to serve your reporting needs, not your
 
 MMM is active at this level and calibrated well enough across your portfolio to provide directional confidence. Experimentation is systematic: you run holdout tests regularly, across most formats, with consistent methodology. But the results live inside your system. They are not structured for external consumption. A holding company allocator cannot take your MMM output and run it through their cross-channel model without significant translation work. That translation friction is the gap between Level 4 and Level 5.
 
-<!-- TODO 2026-05-01: insert Level 5 per-level illustration when Jaiah delivers per-level art kit -->
+![Proof Capacity Level 5, Proof That Travels, illustration](/images/thesis/mmf/proof-level-5.jpg)
 
 **Level 5: Proof That Travels.** Your proof does not just satisfy internal stakeholders. It survives external scrutiny. A brand's analytics team can evaluate your methodology, understand your attribution logic, and assess your incrementality evidence without taking your word for it. A holding company media allocator can take your measurement output and run it through their cross-channel model without rebuilding it from scratch. Your proof travels outside your walls and holds up when it gets there.
 
