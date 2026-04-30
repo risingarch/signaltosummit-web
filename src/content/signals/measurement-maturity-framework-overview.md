@@ -1,7 +1,7 @@
 ---
 title: "Measurement Maturity: A Framework for Retail and Commerce Media"
 description: "Three dimensions. Five levels each. Scored per ad product. The framework retail media teams can use to evaluate where they stand against the proof standards their audiences actually apply in 2026."
-teaser: "The rubric retail media teams have been missing — built from what fifteen published models left out."
+teaser: "Defined by what you can prove, deliver, and unify."
 executiveSummary: "Fifteen published retail media measurement maturity models, from the leading research firms, consultancies, and industry bodies. Not one of them asks the question that actually determines whether the money comes back: can you prove value to the people spending money with you? This framework fills that gap. Three dimensions — proof capacity, operational delivery, ecosystem unification — scored independently, per ad product, across five levels of maturity. The chain does not average. It breaks at the weakest link."
 pillar: thesis
 publishDate: 2026-04-14T12:00:00
