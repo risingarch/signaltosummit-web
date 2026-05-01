@@ -43,6 +43,19 @@
   --spacing-problem-blocks: 3rem;     /* 48px */
   --spacing-mobile-padding: 1.5rem;   /* 24px */
 
+  /* ── Newsletter Page Spacing Standard (Daniel directive 2026-04-30) ── */
+  /* Single rhythm applied to all newsletter pages via [...slug].astro renderer. */
+  /* Mobile values overridden in @media (max-width: 768px) below. */
+  --space-newsletter-section: 3.5rem;        /* H2 section to section */
+  --space-newsletter-paragraph: 1.25rem;     /* Paragraph to paragraph */
+  --space-newsletter-image: 2rem;            /* Image top + bottom */
+  --space-newsletter-pullquote: 2.5rem;      /* Pull-quote (when authorized) */
+  --space-newsletter-cta: 2rem;              /* CTA / Let's talk link */
+  --space-newsletter-subscribe: 3rem;        /* Subscribe box top + bottom */
+  --space-newsletter-share: 2rem;            /* Share row top + bottom */
+  --space-newsletter-discussion: 2.5rem;     /* Discussion section top padding */
+  --space-newsletter-end-article: 4rem;      /* Final element to footer */
+
   /* ── Component Tokens ── */
   --radius-card: 0.5rem;     /* 8px */
   --radius-button: 0.5rem;   /* 8px */
@@ -481,5 +494,54 @@
       max-width: none;
       margin: 2rem 0;
     }
+  }
+}
+
+/* ── Newsletter Page Spacing Utilities (Daniel directive 2026-04-30) ── */
+/* Used by [...slug].astro renderer to apply the unified whitespace standard. */
+@layer utilities {
+  .newsletter-section-end {
+    padding-bottom: var(--space-newsletter-section);
+  }
+  .newsletter-subscribe-wrap {
+    padding-top: var(--space-newsletter-subscribe);
+    padding-bottom: var(--space-newsletter-subscribe);
+  }
+  .newsletter-share-row {
+    padding-top: var(--space-newsletter-share);
+    padding-bottom: var(--space-newsletter-share);
+  }
+  .newsletter-discussion {
+    padding-top: var(--space-newsletter-discussion);
+    padding-bottom: var(--space-newsletter-discussion);
+  }
+  .newsletter-end-article {
+    padding-bottom: var(--space-newsletter-end-article);
+  }
+  .newsletter-article-header {
+    padding-top: var(--space-newsletter-section);
+    padding-bottom: var(--space-newsletter-section);
+  }
+  .newsletter-hero-image {
+    padding-bottom: var(--space-newsletter-image);
+  }
+  .newsletter-exec-summary {
+    padding-bottom: var(--space-newsletter-section);
+  }
+  .newsletter-video {
+    padding-bottom: var(--space-newsletter-section);
+  }
+
+  /* Mobile overrides for the newsletter standard */
+  @media (max-width: 768px) {
+    .newsletter-section-end { padding-bottom: 3rem; }
+    .newsletter-subscribe-wrap { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+    .newsletter-share-row { padding-top: 1.5rem; padding-bottom: 1.5rem; }
+    .newsletter-discussion { padding-top: 2rem; padding-bottom: 2rem; }
+    .newsletter-end-article { padding-bottom: 3rem; }
+    .newsletter-article-header { padding-top: 3rem; padding-bottom: 3rem; }
+    .newsletter-hero-image { padding-bottom: 1.5rem; }
+    .newsletter-exec-summary { padding-bottom: 3rem; }
+    .newsletter-video { padding-bottom: 3rem; }
   }
 }
