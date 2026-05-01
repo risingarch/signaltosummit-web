@@ -6,8 +6,8 @@ executiveSummary: "Ninety-seven percent of brand advertisers say real-time data 
 pillar: thesis
 publishDate: 2026-04-28T12:00:00
 author: Jaiah Kamara
+videoUrl: https://www.youtube-nocookie.com/embed/Tf_aeoBxPNE
 videoTitle: "Operational Delivery, The Second Dimension of Measurement Maturity, Signal to Summit"
-videoDuration: "coming soon"
 thumbnail: /images/thesis/mmf/operational-delivery-cover.jpg
 draft: false
 ---
