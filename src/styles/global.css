@@ -315,8 +315,6 @@
     padding-left: 0;
     margin-bottom: 0;
     counter-reset: orientation;
-    column-count: 2;
-    column-gap: 2.5rem;
   }
 
   .prose-thesis .orientation-block li {
@@ -467,10 +465,6 @@
 
     .prose-thesis .orientation-block {
       padding: 1.5rem;
-    }
-
-    .prose-thesis .orientation-block ol {
-      column-count: 1;
     }
 
     .prose-thesis .orientation-block li {

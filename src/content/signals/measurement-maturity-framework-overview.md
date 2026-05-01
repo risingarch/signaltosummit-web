@@ -17,18 +17,6 @@ draft: false
 
 ---
 
-<div class="orientation-block">
-<ol>
-<li><a href="#why-this-exists"><span class="orient-label">Why This Exists</span><span class="orient-context">The view I wished I had as an operator, now built for the industry</span></a></li>
-<li><a href="#what-this-costs-you"><span class="orient-label">What This Costs You</span><span class="orient-context">The revenue problem operating across trust, delivery, and fragmentation simultaneously</span></a></li>
-<li><a href="#how-the-rubric-works"><span class="orient-label">How the Rubric Works</span><span class="orient-context">Three dimensions, five levels each, scored independently per ad product</span></a></li>
-<li><a href="#going-deeper-the-three-dimensions-of-measurement-maturity"><span class="orient-label">Going Deeper</span><span class="orient-context">Per-dimension thesis papers that break down the cost, the levels, and the benefit</span></a></li>
-<li><a href="#where-to-start"><span class="orient-label">Where to Start</span><span class="orient-context">Find your weakest link, score honestly, invest where the gap costs you most</span></a></li>
-</ol>
-</div>
-
----
-
 ## WHY THIS EXISTS
 
 When I first started as a leader in measurement at Best Buy, it actually predated the formal launch of Best Buy Ads as a business. Back then I had two analysts reporting to me, and we were responsible for one thing: producing reporting for onsite display.
@@ -42,6 +30,16 @@ Now, as an industry analyst and consultant working to help move this industry fo
 As I set out to provide those insights, I commissioned a structured review of what measurement maturity models and frameworks were available in the marketplace. Fifteen published models from the leading research firms, consultancies, and industry bodies, everything published between 2020 and 2026 that claimed to assess retail media measurement capability. One thing became very clear. There is a lot of emphasis on what capabilities you have built, what technologies you have tried to add, what channels you have added to your portfolio. But what was available felt dated. And as a former operator and measurement leader who built the team and capability from ground zero to a thriving function inside a top-ten retail media business for a Fortune 100 company, I felt something critical was missing. Not one of those fifteen models asks the question that actually determines whether the money comes back: can you prove value to the people spending money with you?
 
 So I built what I could not find. A rubric that retail and commerce media teams can use to evaluate where they stand, not against a checklist of capabilities adopted, but against the proof standards their advertisers, agencies, and internal stakeholders actually apply in 2026.
+
+<div class="orientation-block">
+<ol>
+<li><a href="#why-this-exists"><span class="orient-label">Why This Exists</span><span class="orient-context">The view I wished I had as an operator, now built for the industry</span></a></li>
+<li><a href="#what-this-costs-you"><span class="orient-label">What This Costs You</span><span class="orient-context">The revenue problem operating across trust, delivery, and fragmentation simultaneously</span></a></li>
+<li><a href="#how-the-rubric-works"><span class="orient-label">How the Rubric Works</span><span class="orient-context">Three dimensions, five levels each, scored independently per ad product</span></a></li>
+<li><a href="#going-deeper-the-three-dimensions-of-measurement-maturity"><span class="orient-label">Going Deeper</span><span class="orient-context">Per-dimension thesis papers that break down the cost, the levels, and the benefit</span></a></li>
+<li><a href="#where-to-start"><span class="orient-label">Where to Start</span><span class="orient-context">Find your weakest link, score honestly, invest where the gap costs you most</span></a></li>
+</ol>
+</div>
 
 ---
 

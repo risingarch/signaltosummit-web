@@ -6,7 +6,6 @@ executiveSummary: "Ninety-seven percent of brand advertisers say real-time data 
 pillar: thesis
 publishDate: 2026-04-28T12:00:00
 author: Jaiah Kamara
-videoUrl: https://www.youtube-nocookie.com/embed/Tf_aeoBxPNE
 videoTitle: "Operational Delivery, The Second Dimension of Measurement Maturity, Signal to Summit"
 thumbnail: /images/thesis/mmf/operational-delivery-cover.jpg
 draft: false
@@ -20,6 +19,12 @@ draft: false
 
 ---
 
+The Signal to Summit Measurement Maturity series introduced three dimensions that determine whether proof reaches the person making the spending decision. Proof capacity was the first: what can you actually demonstrate, and to whom. This paper goes deeper on the second dimension, operational delivery. Because what the first paper made clear is this: proof that cannot get into the right hands, in the right format, at the right moment, does not change a spending decision. Operational delivery is the dimension most retail media organizations underestimate, because the failure is invisible. The work was done. The proof was real. The deal still did not come back.
+
+If you have not read the series introduction, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
+
+If you missed the first dimension, [Proof Capacity: The First Dimension of Measurement Maturity](/summit-signals/proof-capacity-the-first-dimension-of-measurement-maturity) is the prerequisite to this paper.
+
 <div class="orientation-block">
 <ol>
 <li><a href="#the-cost-of-not-getting-delivery-right"><span class="orient-label">The Cost of Not Getting Delivery Right</span><span class="orient-context">Four ways slow proof loses deals brands wanted to give you</span></a></li>
@@ -32,14 +37,6 @@ draft: false
 
 ---
 
-The Signal to Summit Measurement Maturity series introduced three dimensions that determine whether proof reaches the person making the spending decision. Proof capacity was the first: what can you actually demonstrate, and to whom. This paper goes deeper on the second dimension, operational delivery. Because what the first paper made clear is this: proof that cannot get into the right hands, in the right format, at the right moment, does not change a spending decision. Operational delivery is the dimension most retail media organizations underestimate, because the failure is invisible. The work was done. The proof was real. The deal still did not come back.
-
-If you have not read the series introduction, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
-
-If you missed the first dimension, [Proof Capacity: The First Dimension of Measurement Maturity](/summit-signals/proof-capacity-the-first-dimension-of-measurement-maturity) is the prerequisite to this paper.
-
----
-
 ## THE COST OF NOT GETTING DELIVERY RIGHT
 
 Delivery failure is not a logistics problem. It is a revenue problem that compounds silently because nobody sees the deals that never materialized. The cost operates at four levels, each escalating in severity.
@@ -47,10 +44,6 @@ Delivery failure is not a logistics problem. It is a revenue problem that compou
 First, your proof expires before it arrives. Your measurement team produces a credible incrementality analysis for a brand's Q1 campaign. The problem is the report lands six weeks after the campaign ended. The brand's media buyer already planned Q2 without it. The agency already reallocated. The insight was real, but it arrived after the decision it was supposed to inform. You did the hardest part, proving the spend worked, and then lost the value by delivering it too late to matter. Every cycle this happens, the brand learns to plan without your data. That behavior becomes permanent.
 
 Second, you lose deals to networks that deliver faster, not better. A brand is evaluating three retail media networks. Your measurement is stronger. Your incrementality methodology is more rigorous. But the other network gives them a self-serve dashboard with daily refresh and API access for their agency. You give them a PDF three weeks after the campaign. Ninety-seven percent of brand advertisers say real-time data access directly influences their investment decisions (NIQ/Coresight, 2024). The brand does not choose the better proof. They choose the proof they can actually use in their workflow. You are not losing on quality. You are losing on access.
-
-<div class="pull-quote">
-<p>The brand does not choose the better proof. They choose the proof they can actually use in their workflow.</p>
-</div>
 
 ![Ninety-seven percent of brand advertisers say real-time data access directly influences their investment decisions, NIQ/Coresight 2024](/images/thesis/mmf/operational-delivery-stat-banner.jpg)
 
@@ -62,17 +55,9 @@ Fourth, the window between successful test and scaled commitment is shorter than
 
 And these costs compound on a rising timeline. Three years ago, a quarterly PDF was acceptable for most brand conversations. Today, agencies expect dashboard access at minimum. By next year, API integration and clean room interoperability will be table stakes for holding company consideration. The networks investing in delivery infrastructure now are building a compounding advantage. Every quarter they operate with faster, more accessible delivery, they accumulate advertiser relationships, agency integrations, and workflow habits that become switching costs. The networks that wait are not standing still. They are falling behind, because the bar is rising whether they keep up or not.
 
-<div class="stat-block">
-<div class="stat-item"><span class="stat-value">97%</span><span class="stat-label">brand advertisers say real-time data access directly influences investment decisions (NIQ/Coresight, 2024)</span></div>
-<div class="stat-item"><span class="stat-value">2,400</span><span class="stat-label">analyst hours per year on manual report assembly at a mid-size retail media network running 50 campaigns per quarter</span></div>
-<div class="stat-item"><span class="stat-value">$500K+</span><span class="stat-label">in annual revenue lost to slow proof delivery, when 10% of campaigns do not renew because proof arrived after the planning window closed</span></div>
-</div>
-
 ---
 
 ## FIVE LEVELS OF OPERATIONAL DELIVERY
-
-![Five levels of Operational Delivery, from Manual and Reactive to Delivery as Competitive Advantage](/images/thesis/mmf/operational-delivery-five-levels.jpg)
 
 ![Operational Delivery Level 1, Manual and Reactive, illustration](/images/thesis/mmf/operational-delivery-level-1.jpg)
 
@@ -143,10 +128,6 @@ First, your team's capacity changes permanently. When delivery infrastructure ca
 Second, your advertiser relationships develop switching costs they did not have before. When a brand's analytics team builds their workflow around your API, when a holding company's allocation model pulls your data automatically, when an agency's media mix model includes your network as a standard input, the cost of removing your network from their plan is no longer just a performance question. It is an integration question. Disconnecting from your delivery infrastructure requires rebuilding workflows they have come to depend on. That is a structural retention advantage that no proof improvement alone can create.
 
 Third, you get into models you were never in before. Holding company allocation models do not manually evaluate every network for every client. They pull from the networks whose data is accessible at the cadence and format their systems require. If your data is not in the model, you are not in the consideration set, regardless of how strong your proof is. Level 5 delivery is the entry requirement for the allocation decisions where the largest budgets get moved. Proof capacity earns you the right to be evaluated. Delivery infrastructure determines whether you are actually in the room when the decision gets made.
-
-<div class="pull-quote-thesis">
-<p>Proof capacity earns you the right to be evaluated. Delivery infrastructure determines whether you are actually in the room when the decision gets made.</p>
-</div>
 
 That is the operational delivery dimension. Where you sit on that spectrum determines whether the proof your measurement team produces actually reaches the person making the spending decision, in the format they need, at the moment their decision requires it.
 

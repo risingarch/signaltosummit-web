@@ -6,7 +6,6 @@ executiveSummary: "Forty-four percent of brand advertisers cite accuracy and rel
 pillar: thesis
 publishDate: 2026-04-21T12:00:00
 author: Jaiah Kamara
-videoUrl: https://www.youtube-nocookie.com/embed/Tf_aeoBxPNE
 videoTitle: "Proof Capacity, The First Dimension of Measurement Maturity, Signal to Summit"
 thumbnail: /images/thesis/mmf/proof-capacity-cover.jpg
 draft: false
@@ -20,6 +19,10 @@ draft: false
 
 ---
 
+The Signal to Summit Measurement Maturity series begins with a question that determines whether everything else in your measurement function actually matters: can you prove value to the people spending money with you? Not what capabilities you have built. Not what technologies you have adopted. Whether your measurement produces evidence that survives the scrutiny of a brand's analytics team, a holding company's allocation model, or your own finance leadership. That question is the foundation of this framework, and proof capacity is where it begins. If you want the full context before going deeper, the series introduction covers the origin of that research, how the three dimensions work together, and the weakest-link principle that ties the rubric into a single diagnostic. If you are already there, let's go.
+
+If you have not read the series introduction, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
+
 <div class="orientation-block">
 <ol>
 <li><a href="#the-cost-of-not-getting-proof-right"><span class="orient-label">The Cost of Not Getting Proof Right</span><span class="orient-context">Four compounding revenue consequences when proof cannot survive scrutiny</span></a></li>
@@ -29,12 +32,6 @@ draft: false
 <li><a href="#what-comes-next"><span class="orient-label">What Comes Next</span><span class="orient-context">Operational delivery determines whether proof reaches the person making the spending decision</span></a></li>
 </ol>
 </div>
-
----
-
-The Signal to Summit Measurement Maturity series begins with a question that determines whether everything else in your measurement function actually matters: can you prove value to the people spending money with you? Not what capabilities you have built. Not what technologies you have adopted. Whether your measurement produces evidence that survives the scrutiny of a brand's analytics team, a holding company's allocation model, or your own finance leadership. That question is the foundation of this framework, and proof capacity is where it begins. If you want the full context before going deeper, the series introduction covers the origin of that research, how the three dimensions work together, and the weakest-link principle that ties the rubric into a single diagnostic. If you are already there, let's go.
-
-If you have not read the series introduction, [Measurement Maturity: A Framework for Retail and Commerce Media](/summit-signals/measurement-maturity-framework-overview), that is the entry point to the full framework.
 
 ---
 
