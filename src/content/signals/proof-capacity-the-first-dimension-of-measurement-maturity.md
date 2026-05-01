@@ -46,10 +46,6 @@ First, brands refuse to recommit. When a brand advertiser finishes a campaign an
 
 Second, the proof language itself is fractured. The industry cannot even agree on what "incremental" means. The ANA and ARF identified ten distinct definitions of incrementality in use across the industry, with only 48% maximum agreement on any single definition (ANA/ARF, 2024). When a brand asks you to prove incrementality and your definition does not match theirs, the conversation stalls before the data is even reviewed. Proof that uses language the audience does not share is not proof. It is a misunderstanding waiting to erode trust.
 
-<div class="pull-quote">
-<p>Proof that uses language the audience does not share is not proof. It is a misunderstanding waiting to erode trust.</p>
-</div>
-
 Third, the trust deficit is nearly universal. Only 6% of advertisers trust retail media network measurement (Bain, 2024). Ninety-four percent of the brands spending money on your network have reservations about the numbers you are giving them. That is not a gap to close. That is a foundation to rebuild.
 
 ![Only 6 percent of advertisers fully trust retail media network measurement, Bain 2024](/images/thesis/mmf/6-percent-trust-stat.jpg)
@@ -60,17 +56,9 @@ And these costs compound commercially. If your existing advertisers cannot get c
 
 The proof bar is not static. It rises every year. In 2023, ROAS was sufficient for most brand conversations. By 2025, incrementality became the table stakes question. By 2026, cross-channel comparability is what holding companies require. Standing still on proof capacity means falling behind, because the standard advertisers apply is escalating whether you keep up or not.
 
-<div class="stat-block">
-<div class="stat-item"><span class="stat-value">44%</span><span class="stat-label">brand advertisers cite accuracy and reliability as their top measurement frustration (Bain/ANA, 2024)</span></div>
-<div class="stat-item"><span class="stat-value">6%</span><span class="stat-label">advertisers fully trust retail media network measurement (Bain, 2024)</span></div>
-<div class="stat-item"><span class="stat-value">10</span><span class="stat-label">distinct definitions of "incrementality" in industry use, with only 48% maximum agreement on any single one (ANA/ARF, 2024)</span></div>
-</div>
-
 ---
 
 ## FIVE LEVELS OF PROOF CAPACITY
-
-![Five levels of Proof Capacity, from Flying Blind to Proof That Travels](/images/thesis/mmf/proof-capacity-five-levels.jpg)
 
 ![Proof Capacity Level 1, Flying Blind, illustration](/images/thesis/mmf/proof-level-1.jpg)
 
@@ -149,10 +137,6 @@ Second, you unlock a budget pool you have never accessed. Right now, most retail
 Third, the revenue story changes for your finance leadership. When your retail media business grows by pulling from trade and shopper budgets, finance sees an accounting shift, not new revenue. The money was already in the building. But when you attract national media dollars because your proof earned them, that is genuinely incremental contribution. The internal coalition holds because the numbers tell a growth story, not a reclassification story. Finance stops asking whether retail media is cannibalizing existing relationships and starts asking how fast it can scale.
 
 That is the proof capacity dimension. Where you sit on that spectrum determines whether you can answer the most important question any advertiser, agency, or internal stakeholder will ask: did this work, and can you prove it?
-
-<div class="pull-quote-thesis">
-<p>Did this work, and can you prove it?</p>
-</div>
 
 ---
 

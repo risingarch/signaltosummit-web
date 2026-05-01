@@ -2,7 +2,7 @@
 title: "Measurement Maturity: A Framework for Retail and Commerce Media"
 description: "Three dimensions. Five levels each. Scored per ad product. The framework retail media teams can use to evaluate where they stand against the proof standards their audiences actually apply in 2026."
 teaser: "Defined by what you can prove, deliver, and unify."
-executiveSummary: "Fifteen published retail media measurement maturity models, from the leading research firms, consultancies, and industry bodies. Not one of them asks the question that actually determines whether the money comes back: can you prove value to the people spending money with you? This framework fills that gap. Three dimensions — proof capacity, operational delivery, ecosystem unification — scored independently, per ad product, across five levels of maturity. The chain does not average. It breaks at the weakest link."
+executiveSummary: "A practical rubric for retail and commerce media teams to evaluate where their measurement stands. Built from seven years of operating experience inside a top-ten retail media network, refined through structured research into how advertisers, agencies, and holding companies actually evaluate proof in 2026. Three dimensions: proof capacity, operational delivery, ecosystem unification. Five levels each. Scored independently, per ad product. The chain does not average. It breaks at the weakest link."
 pillar: thesis
 publishDate: 2026-04-14T12:00:00
 author: Jaiah Kamara
@@ -19,7 +19,7 @@ draft: false
 
 <div class="orientation-block">
 <ol>
-<li><a href="#why-this-exists"><span class="orient-label">Why This Exists</span><span class="orient-context">The fifteen-model audit and the question every published framework leaves out</span></a></li>
+<li><a href="#why-this-exists"><span class="orient-label">Why This Exists</span><span class="orient-context">The view I wished I had as an operator, now built for the industry</span></a></li>
 <li><a href="#what-this-costs-you"><span class="orient-label">What This Costs You</span><span class="orient-context">The revenue problem operating across trust, delivery, and fragmentation simultaneously</span></a></li>
 <li><a href="#how-the-rubric-works"><span class="orient-label">How the Rubric Works</span><span class="orient-context">Three dimensions, five levels each, scored independently per ad product</span></a></li>
 <li><a href="#going-deeper-the-three-dimensions-of-measurement-maturity"><span class="orient-label">Going Deeper</span><span class="orient-context">Per-dimension thesis papers that break down the cost, the levels, and the benefit</span></a></li>
@@ -51,7 +51,7 @@ Measurement failure is not an abstract problem. It is a revenue problem that ope
 
 Start with trust. Only 6% of advertisers fully trust retail media network measurement (Bain, 2024). Ninety-four percent of the brands spending money on your network have reservations about the numbers you are giving them. That is not a gap to close. That is a foundation to rebuild. And the consequence is direct.
 
-![Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment — Skai/Stratably January 2026 and McKinsey March 2026](/images/thesis/mmf/skai-mckinsey-50-percent.jpg)
+![Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment, per Skai/Stratably January 2026 and McKinsey March 2026](/images/thesis/mmf/skai-mckinsey-50-percent.jpg)
 
 Fifty-two percent of ad buyers say better measurement would most accelerate their retail media investment (Skai/Stratably, January 2026). Separately, 50% of advertisers say improved measurement would immediately unlock incremental spend (McKinsey, March 2026). Two independent surveys. Essentially the same number. The money exists. It is waiting. It will not move until proof gets credible.
 
@@ -64,12 +64,6 @@ Now add fragmentation. A brand runs campaigns across multiple ad products on you
 These three failures do not add up. They multiply. Proof that cannot be delivered when it matters does not change spending decisions. Proof delivered quickly from disconnected systems produces numbers that contradict each other. Connected systems that produce fast, consistent numbers but cannot demonstrate incrementality give brands a polished dashboard full of metrics nobody trusts. The weakest dimension constrains the other two.
 
 And the cost is not static. It compounds on a rising timeline. In 2023, ROAS was sufficient for most brand conversations. By 2025, incrementality became the table stakes question. By 2026, cross-channel comparability is what holding companies require to include your network in their allocation models. The proof bar, the delivery standard, and the connectivity expectation are all escalating whether you keep up or not.
-
-<div class="stat-block">
-<div class="stat-item"><span class="stat-value">6%</span><span class="stat-label">advertisers fully trust retail media network measurement (Bain, 2024)</span></div>
-<div class="stat-item"><span class="stat-value">52%</span><span class="stat-label">ad buyers say better measurement would most accelerate retail media investment (Skai/Stratably, January 2026)</span></div>
-<div class="stat-item"><span class="stat-value">97%</span><span class="stat-label">brand advertisers say real-time data access influences investment decisions (NIQ/Coresight, 2024)</span></div>
-</div>
 
 ---
 
