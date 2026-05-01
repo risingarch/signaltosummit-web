@@ -6,8 +6,8 @@ executiveSummary: "Fifteen published retail media measurement maturity models, f
 pillar: thesis
 publishDate: 2026-04-14T12:00:00
 author: Jaiah Kamara
-videoTitle: "Measurement Maturity: A Framework for Retail and Commerce Media — Signal to Summit"
-videoDuration: "coming soon"
+videoUrl: https://www.youtube-nocookie.com/embed/Tf_aeoBxPNE
+videoTitle: "Measurement Maturity: A Framework for Retail and Commerce Media | Signal to Summit"
 draft: false
 ---
 
