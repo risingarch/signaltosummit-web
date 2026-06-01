@@ -141,7 +141,7 @@ Your sponsored products might have strong proof and fast delivery. Your offsite 
 
 Proof and delivery that function within each ad product but cannot connect across them leave your biggest advertisers with a fragmented picture of your network's value. The brands spending the most across your portfolio are the most exposed to that fragmentation. And the cost is not just a reporting inconvenience. It is a structural limit on the revenue story you can tell.
 
-That is what comes next: Ecosystem Unification: The Third Dimension of Measurement Maturity. How connected are the systems producing your proof, and what does it cost when the answer is not connected enough? Coming soon.
+That is what comes next: [Ecosystem Unification: The Third Dimension of Measurement Maturity](/summit-signals/ecosystem-unification-the-third-dimension-of-measurement-maturity). How connected are the systems producing your proof, and what does it cost when the answer is not connected enough?
 
 If you have not read the prior installments, the [series overview](/summit-signals/measurement-maturity-framework-overview) and [Proof Capacity](/summit-signals/proof-capacity-the-first-dimension-of-measurement-maturity) are the entry points.
 

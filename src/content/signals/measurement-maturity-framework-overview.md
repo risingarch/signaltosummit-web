@@ -115,9 +115,9 @@ Each dimension has its own thesis paper that breaks down the cost in detail, wal
 
 *Click above to read the full Operational Delivery thesis paper.*
 
-![Ecosystem Unification thesis paper cover art](/images/thesis/mmf/ecosystem-unification-cover.jpg)
+[![Ecosystem Unification thesis paper cover art](/images/thesis/mmf/ecosystem-unification-cover.jpg)](/summit-signals/ecosystem-unification-the-third-dimension-of-measurement-maturity)
 
-*Ecosystem Unification thesis paper (coming soon).*
+*Click above to read the full Ecosystem Unification thesis paper.*
 
 ---
 
