@@ -153,7 +153,7 @@ If you have not read the series overview, [Measurement Maturity: A Framework for
 
 ## Why I Do This Work
 
-I'm Jaiah Kamara, founder of Signal to Summit Consulting.
+I'm Jaiah Kamara, founder of Signal to Summit.
 
 I spent fifteen years in retail, seven of those years in central leadership roles building the reporting and measurement infrastructure at a top-ten retail media network. I built systems that drove advertiser confidence: reliable reporting infrastructure, decision frameworks that empowered action, operating models that ensured data quality, and cross-functional ways of working that aligned sales, strategy, and measurement around shared truth.
 

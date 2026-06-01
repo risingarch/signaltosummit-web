@@ -8,12 +8,11 @@ const signals = allSignals.sort((a, b) =>
   new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime()
 );
 
-// Calculate estimated read time from content length
-function estimateReadTime(description: string): string {
-  // Rough estimate based on description + typical article length
-  // Will be more accurate when we can access rendered content
-  const words = description.split(/\s+/).length;
-  const minutes = Math.max(3, Math.ceil(words / 200) + 5);
+// Calculate read time from actual article body, matching the article header
+// computation in [...slug].astro (wordCount / 230) so card and page agree.
+function estimateReadTime(body: string): string {
+  const words = body ? body.split(/\s+/).length : 0;
+  const minutes = Math.max(3, Math.ceil(words / 230));
   return `${minutes} min read`;
 }
 ---
@@ -78,7 +77,7 @@ function estimateReadTime(description: string): string {
                     {' '}&middot;{' '}
                     {signal.data.videoDuration
                       ? `${signal.data.videoDuration} video`
-                      : estimateReadTime(signal.data.description)}
+                      : estimateReadTime(signal.body)}
                   </p>
 
                   {/* Title */}
