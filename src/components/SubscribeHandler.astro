@@ -13,6 +13,9 @@
     'footer-email-form': 'footer',
     'mid-read-email-form': 'mid_read',
     'comments-email-form': 'comment_placeholder',
+    // PB-076 funnel work order (2026-07-15): the article-page form rendered on
+    // every article but was never mapped, so submissions were silently dropped.
+    'article-subscribe-form': 'article_bottom',
   };
 
   function getArticleSlug(): string | null {
@@ -44,7 +47,7 @@
         // Build metadata
         const metadata: Record<string, string> = {};
         const slug = getArticleSlug();
-        if (slug && (source === 'mid_read' || source === 'comment_placeholder')) {
+        if (slug && (source === 'mid_read' || source === 'comment_placeholder' || source === 'article_bottom')) {
           metadata.article_slug = slug;
         }
         const utm = new URLSearchParams(window.location.search).get('utm_source');
