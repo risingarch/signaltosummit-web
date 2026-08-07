@@ -26,5 +26,7 @@ export default defineConfig({
     keystatic(),
   ],
 
-  adapter: vercel(),
+  adapter: vercel({
+    webAnalytics: { enabled: true },
+  }),
 });
